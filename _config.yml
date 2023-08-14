@@ -31,7 +31,6 @@ groupCategories:
                 { icon: "github", link: "https://github.com/tailintalent" },
                 { icon: "twitter", link: "https://twitter.com/tailin_wu" },
                 { icon: "google", link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate" },
-                { icon: "envelop",link: "mailto:wutailin@westlake.edu.cn"},
               ],
           },
         ],
