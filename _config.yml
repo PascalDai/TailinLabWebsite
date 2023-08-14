@@ -1,0 +1,73 @@
+markdown: kramdown
+
+# footer和navbar 上用的路径
+menuPages:
+  - { name: "Home", url: "/", isIndexHeader: false, isNavbar: true, isFooter: true}
+  - { name: "Reaserch", url: "/research", isIndexHeader: true, isNavbar: true, isFooter: true}
+  - { name: "Publications", url: "/publications", isIndexHeader: true, isNavbar: true, isFooter: true}
+  - { name: "News", url: "/news", isIndexHeader: true, isNavbar: true, isFooter: true}
+  - { name: "People", url: "/people", isIndexHeader: true, isNavbar: true, isFooter: true}
+  - { name: "Opening", url: "/opening", isIndexHeader: false, isNavbar: true, isFooter: true}
+
+# footer 上展示的社交媒体
+socialLinks:
+  - { icon: "fa-github", link: "https://github.com/tailintalent" }
+  - { icon: "fa-twitter", link: "https://twitter.com/tailin_wu" }
+
+copyright: "Tailin Wu Lab"
+
+groupCategories:
+  - {
+      icon: "flight",
+      category: "Principal Investigator",
+      label: "principal-investigator",
+      members:
+        [
+          {
+            name: "Tailin Wu",
+            pic: "tailinwu.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/tailintalent" },
+                { icon: "twitter", link: "https://twitter.com/tailin_wu" },
+                { icon: "google", link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate" },
+                { icon: "envelop",link: "mailto:wutailin@westlake.edu.cn"},
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "airplane_ticket",
+      category: "Postdocs and Research Scientists",
+      label: "postdocs-and-research-scientists",
+      members: [{ name: "Long Wei", pic: "longwei.png" }],
+    }
+  - { icon: "flight_class", category: "PhD Students", label: "phd-students" }
+  - {
+      icon: "assignment_ind",
+      category: "Research Assistant",
+      label: "research-assistant",
+      members:
+        [
+          { name: "Wenhao Deng", pic: "wenhaodeng.png" },
+          { name: "Tian Xia", pic: "tianxia.png" },
+          { name: "Yi Dai", pic: "yidai.png" },
+        ],
+    }
+  - {
+      icon: "flight_land",
+      category: "Visiting Students",
+      label: "visiting-students",
+      members:
+        [
+          { name: "Junjie Shan", pic: "junjieshan.png" },
+          { name: "Hongtao Zheng", pic: "hongtaozheng.png" },
+          { name: "Jiaxin Li", pic: "jiaxinli.png" },
+          { name: "Xianfeng Wu", pic: "xianfengwu.png" },
+          { name: "Zhuohao Ni", pic: "zhuohaoni.png" },
+          { name: "Xiang Zheng", pic: "xiangzheng.png" },
+          { name: "Siyuan Li", pic: "siyuanli.png" },
+          { name: "Tao Zhang", pic: "taozhang.png" },
+        ],
+    }
+  - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
