@@ -3,252 +3,112 @@ layout: page
 title: "Publications"
 subTitle: "This is a Page about Publications"
 permalink: /publications
+backgroundPic: ""
 ---
+
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 justify-content-center d-flex flex-column">
-                <div class="card">
-                  <div class="d-block blur-shadow-image">
-                    <img
-                      src="https://images.unsplash.com/photo-1574766699303-ac3a5dffb74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
-                      alt="img-blur-shadow-blog-2"
-                      class="img-fluid border-radius-lg"
-                      loading="lazy"
-                    />
-                  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- highlight publication -->
+        {% assign highlightPublication = site.categories.publications | first %}
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3">
+              <div class="card">
+                <div class="d-block blur-shadow-image">
+                  <img
+                    src="{{ highlightPublication.image }}"
+                    alt="img-blur-shadow-blog-2"
+                    class="img-fluid border-radius-lg"
+                    loading="lazy"
+                  />
                 </div>
               </div>
-              <div
-                class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
-              >
-                <h6 class="category text-warning mt-3">Coworking</h6>
-                <h3 class="card-title">
-                  <a href="javascript:;" class="text-dark"
-                    >Warner Music Group buys concert discovery service Songkick</a
-                  >
-                </h3>
-                <p class="card-description">
-                  Warner Music Group announced today it’s acquiring the selected
-                  assets of the music platform Songkick, including its app for
-                  finding concerts and the company’s trademark. Songkick has been
-                  involved in a lawsuit against the major…
-                  <a
-                    href="javascript:;"
-                    class="text-darker icon-move-right text-sm"
-                    >Read More
-                    <i class="fas fa-arrow-right text-xs ms-1"></i>
-                  </a>
-                </p>
-                <p class="author">
-                  by
-                  <a href="javascript:;" class="ms-1"
-                    ><span class="font-weight-bold text-warning">
-                      Sarah Perez</span
-                    ></a
-                  >, 2 days ago
-                </p>
-              </div>
             </div>
-          </div>
-          <div class="container">
-            <div class="row mt-5">
-              <div class="col-lg-4 mb-lg-0 mb-4">
-                <!-- Start Card Blog Fullbackground - text centered -->
-                <a href="javascript:;">
-                  <div class="card card-background shadow-lg">
-                    <div
-                      class="full-background"
-                      style="
-                        background-image: url('https://images.unsplash.com/photo-1491566102020-21838225c3c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=911&q=80');
-                      "
-                      loading="lazy"
-                    ></div>
-                    <div class="card-body pt-12">
-                      <h4 class="text-white">Ability to Focus</h4>
-                      <p>
-                        Why would anyone pick blue over pink? Pink is obviously a
-                        better color. Everyone’s born confident, and everything’s
-                        taken away from you
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card Blog Fullbackground - text centered -->
-              </div>
-              <div class="col-lg-4 mb-lg-0 mb-4">
-                <!-- Start Card Blog Fullbackground - text centered -->
-                <a href="javascript:;">
-                  <div class="card card-background shadow-lg">
-                    <div
-                      class="full-background"
-                      style="
-                        background-image: url('https://images.unsplash.com/photo-1543781363-295b2861bb81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=913&q=80');
-                      "
-                      loading="lazy"
-                    ></div>
-                    <div class="card-body pt-12">
-                      <h4 class="text-white">Search and Discovery</h4>
-                      <p>
-                        A network alone will not lead to opportunities. It has to
-                        be combined with the content you consume (books, media) to
-                        see how this network.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card Blog Fullbackground - text centered -->
-              </div>
-              <div class="col-lg-4">
-                <!-- Start Card Blog Fullbackground - text centered -->
-                <a href="javascript:;">
-                  <div class="card card-background shadow-lg">
-                    <div
-                      class="full-background"
-                      style="
-                        background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=931&q=80');
-                      "
-                      loading="lazy"
-                    ></div>
-                    <div class="card-body pt-12">
-                      <h4 class="text-white">People get Intimidated</h4>
-                      <p>
-                        If you’re living well, you will make dissatisfied people
-                        feel insignificnt. People get intimidated by anything that
-                        makes them feel small.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card Blog Fullbackground - text centered -->
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row mt-5">
-              <div class="col-lg-6 justify-content-center d-flex flex-column">
-                <div class="card">
-                  <div class="d-block blur-shadow-image">
-                    <img
-                      src="https://images.unsplash.com/photo-1620103143245-9efb3e4a7553?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                      alt="img-blur-shadow-blog-2"
-                      class="img-fluid border-radius-xl"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
-              >
-                <h6 class="category text-warning mt-3">Productivity</h6>
-                <h3 class="card-title">
-                  <a href="javascript:;" class="text-dark"
-                    >Interesting factoids I bet you never knew about Creative
-                    Tim</a
-                  >
-                </h3>
-                <p class="card-description">
-                  Warner Music Group announced today it’s acquiring the selected
-                  assets of the music platform Songkick, including its app for
-                  finding concerts and the company’s trademark. Songkick has been
-                  involved in a lawsuit against the major…
-                  <a
-                    href="javascript:;"
-                    class="text-darker icon-move-right text-sm"
-                    >Read More
-                    <i class="fas fa-arrow-right text-xs ms-1"></i>
-                  </a>
-                </p>
-                <p class="author">
-                  by
-                  <a href="javascript:;" class="ms-1"
-                    ><span class="font-weight-bold text-warning">
-                      Sarah Perez</span
-                    ></a
-                  >, 2 days ago
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row mt-5">
-              <div class="col-lg-4 mb-lg-0 mb-4">
-                <!-- Start Card Blog Fullbackground - text centered -->
-                <a href="javascript:;">
-                  <div class="card card-background shadow-lg">
-                    <div
-                      class="full-background"
-                      style="
-                        background-image: url('https://images.unsplash.com/photo-1503924289140-72034152d86e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80');
-                      "
-                      loading="lazy"
-                    ></div>
-                    <div class="card-body pt-12">
-                      <h4 class="text-white">History of Industry</h4>
-                      <p>
-                        Knowing the history better than anybody else is a huge
-                        career advantage, which is wild because even though it’s
-                        so simple, few people read up.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card Blog Fullbackground - text centered -->
-              </div>
-              <div class="col-lg-4 mb-lg-0 mb-4">
-                <!-- Start Card Blog Fullbackground - text centered -->
-                <a href="javascript:;">
-                  <div class="card card-background shadow-lg">
-                    <div
-                      class="full-background"
-                      style="
-                        background-image: url('https://images.unsplash.com/photo-1491770042090-0810a7e20f46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80');
-                      "
-                      loading="lazy"
-                    ></div>
-                    <div class="card-body pt-12">
-                      <h4 class="text-white">Digital Representation</h4>
-                      <p>
-                        Every protocol has a token, to where every application has
-                        a token, to where every valuable representation of an
-                        object or person has token.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card Blog Fullbackground - text centered -->
-              </div>
-              <div class="col-lg-4">
-                <!-- Start Card Blog Fullbackground - text centered -->
-                <a href="javascript:;">
-                  <div class="card card-background shadow-lg">
-                    <div
-                      class="full-background"
-                      style="
-                        background-image: url('https://images.unsplash.com/photo-1560929585-031f74da804d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
-                      "
-                      loading="lazy"
-                    ></div>
-                    <div class="card-body pt-12">
-                      <h4 class="text-white">Beginning of an Infinity</h4>
-                      <p>
-                        Website visitors today demand a frictionless user
-                        expericence — especially when using search. Because of the
-                        hight standards.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card Blog Fullbackground - text centered -->
+            <div class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
+            >
+              <h6 class="category text-warning mt-3 text-uppercase font-weight-bold">{{ highlightPublication.tag}}</h6>
+              <h3 class="card-title">
+                <a href="{{ highlightPublication.url }}" class="text-dark">{{ highlightPublication.title}}</a>
+              </h3>
+
+              <p class="card-description">
+                {{highlightPublication.content}}
+              </p>
+              <div class="col-12">
+              {% for link in highlightPublication.links %}
+              <span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span>
+              {% endfor %}
               </div>
             </div>
           </div>
         </div>
+        <!-- top2~top4 publication -->
+        {% assign publicationsSubset = site.categories.publications | slice:1,3 %}
+        <div class="container">
+          <div class="row mt-5">
+            {% for publication in publicationsSubset %}
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <!-- Start Card Blog Fullbackground - text centered -->
+                <div class="card card-background shadow-lg">
+                  <div
+                    class="full-background"
+                    style="
+                      background-image: url('{{ publication.image}}');
+                    "
+                    loading="lazy"
+                  ></div>
+                  <div class="card-body pt-12">
+                    <h6 class="category text-warning mt-3 text-uppercase font-weight-bold">{{ publication.tag}}</h6>
+                    <a href="{{publication.url}}"><h4 class="text-white">{{publication.title}}</h4></a>
+                    <div class="text-dark bg-light border-radius-md">
+                      {{publication.content}}
+                    </div>
+                    <!-- <span class="badge bg-info">{{publication.content}}</span>  -->
+                    {% for link in publication.links %}
+                    <span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span>
+                    {% endfor %}         
+                  </div>
+                </div> 
+              <!-- End Card Blog Fullbackground - text centered -->
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- other publications -->
+        {% assign otherpublications = site.categories.publications | slice:4,site.categories.publications.size %}
+        {% for publication in otherpublications %}
+        <div class="card card-plain card-blog mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              {% if publication.image %}
+              <div class="card-image position-relative border-radius-lg cursor-pointer">
+                <div class="blur-shadow-image">
+                  <img
+                    class="img border-radius-lg"
+                    src="{{ publication.image}}"
+                  />
+                </div>
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+              <p class="text-xs text-uppercase font-weight-bold text-gradient text-warning mb-2">{{publication.tag}}</p>
+              <h3 class="text-dark cursor-pointer">{{publication.title}}</h3>
+              <p>
+                {{publication.content}}
+              </p>
+              <div class="col-12">
+              {% for link in publication.links %}
+              <span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
-  
+</div>

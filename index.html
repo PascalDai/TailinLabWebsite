@@ -1,186 +1,314 @@
 ---
 title: Tailin Wu Lab
 ---
+
 <!DOCTYPE html>
 <html lang="en">
+  {% include head.html %}
 
-{% include head.html %}
+  <body class="page-headers-sections">
+    <!-- -------- START HEADER 2 w/ waves and typed text ------- -->
+    <header class="position-relative">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none"
+      >
+        <div class="container">
+          <a class="navbar-brand text-white" href="/">Tailin Wu Lab</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-header-2"
+            aria-controls="navbar-header-2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-header-2">
+            <ul class="navbar-nav mx-auto">
+              {% for menuPage in site.menuPages %} {% if menuPage.isIndexHeader
+              %}
+              <li class="nav-item">
+                <a class="nav-link text-white" href="{{menuPage.url}}">
+                  {{ menuPage.name}}
+                </a>
+              </li>
+              {% endif %} {% endfor %}
+            </ul>
 
-<body class="page-headers-sections">
-  <!-- -------- START HEADER 2 w/ waves and typed text ------- -->
-  <header class="position-relative">
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none">
-      <div class="container">
-        <a class="navbar-brand text-white" href="/">Tailin Wu Lab</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header-2" aria-controls="navbar-header-2" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-header-2">
-          <ul class="navbar-nav mx-auto">
-            {% for menuPage in site.menuPages %}
-            {% if menuPage.isIndexHeader %}
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{{menuPage.url}}">
-                {{ menuPage.name}}
-              </a>
-            </li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-  
-          <ul class="nav navbar-nav">
-            {% for socialLink in site.socialLinks %}
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{{ socialLink.link}}">
-                <i class="fab {{socialLink.icon}}"></i>
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
+            <ul class="nav navbar-nav">
+              {% for socialLink in site.socialLinks %}
+              <li class="nav-item">
+                <a class="nav-link text-white" href="{{ socialLink.link}}">
+                  <i class="fab {{socialLink.icon}}"></i>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="page-header min-vh-100" style="background-image: url(assets/img/bg9.jpg);" loading="lazy">
-      <span class="mask bg-gradient-info opacity-4"></span>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 text-center mx-auto">
-            <h1 class="text-white">Our lab mission is to <span class="text-white" id="typed"></span></h1>
+      </nav>
+      <div
+        class="page-header min-vh-100"
+        style="background-image: url(assets/img/bg9.jpg)"
+        loading="lazy"
+      >
+        <span class="mask bg-gradient-info opacity-4"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 text-center mx-auto">
+              <h1 class="text-white">
+                Our lab mission is to
+                <span class="text-white" id="typed"></span>
+              </h1>
               <div id="typed-strings">
                 <h1>solve important AI + Science problems</h1>
                 <h1>open new frontiers</h1>
               </div>
-            <p class="lead text-white text-center pe-5 mt-4">The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. </p>
-            <br />
-            
+              <p class="lead text-white text-center pe-5 mt-4">
+                The time is now for it to be okay to be great. People in this
+                world shun people for being great. For being a bright color.
+              </p>
+              <br />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- -------- END HEADER 2 w/ waves and typed text ------- -->
-  <!-- -------- START SECTION 3 w/ waves and typed text ------- -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mt-5">
-          <div class="row">
-            <div class="col-lg-6 justify-content-center d-flex flex-column">
-              <div class="card border-radius-lg">
-                <div class="d-block blur-shadow-image">
-                  <img src="../../assets/img/examples/blog8.jpg" alt="img-blur-shadow-blog-2" class="img-fluid border-radius-lg">
+    </header>
+    <!-- -------- END HEADER 2 w/ waves and typed text ------- -->
+    <!-- -------- START SECTION 3 w/ waves and typed text ------- -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <div class="row">
+              <div class="col-lg-6 justify-content-center d-flex flex-column">
+                <div class="card border-radius-lg">
+                  <div class="d-block blur-shadow-image">
+                    <img
+                      src="../../assets/img/examples/blog8.jpg"
+                      alt="img-blur-shadow-blog-2"
+                      class="img-fluid border-radius-lg"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 justify-content-center d-flex flex-column ps-lg-5 pt-lg-0 pt-3">
-              <h6 class="category text-info mt-3">Reaserch</h6>
-              <h3>
-                <a href="javascript:;" class="text-dark">Warner Music Group buys concert discovery service Songkick</a>
-              </h3>
-              <p>
-                Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major… <a href="javascript:;" class="text-darker icon-move-right text-sm">Read More
-                  <i class="fas fa-arrow-right text-xs ms-1"></i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 mt-5">
-          <div class="row flex-row-reverse">
-            <div class="col-lg-6 justify-content-center d-flex flex-column">
-              <div class="card border-radius-lg">
-                <div class="blur-shadow-image">
-                  <img src="../../assets/img/examples/blog6.jpg" alt="img-blur-shadow-blog-2" class="img-fluid border-radius-lg">
-                </div>
+              <div
+                class="col-lg-6 justify-content-center d-flex flex-column ps-lg-5 pt-lg-0 pt-3"
+              >
+                <h6 class="category text-info mt-3">Reaserch</h6>
+                <h3>
+                  <a href="javascript:;" class="text-dark"
+                    >Warner Music Group buys concert discovery service
+                    Songkick</a
+                  >
+                </h3>
+                <p>
+                  Warner Music Group announced today it’s acquiring the selected
+                  assets of the music platform Songkick, including its app for
+                  finding concerts and the company’s trademark. Songkick has
+                  been involved in a lawsuit against the major…
+                  <a
+                    href="javascript:;"
+                    class="text-darker icon-move-right text-sm"
+                    >Read More
+                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                  </a>
+                </p>
               </div>
             </div>
-            <div class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3">
-              <h6 class="category text-info mt-3">Publications</h6>
-              <h3>
-                <a href="javascript:;" class="text-dark">Warner Music Group buys concert discovery service Songkick</a>
-              </h3>
-              <p>
-                Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major… <a href="javascript:;" class="text-darker icon-move-right text-sm">Read More
-                  <i class="fas fa-arrow-right text-xs ms-1"></i>
-                </a>
-              </p>
-            </div>
           </div>
-        </div>
-        <div class="col-lg-12 mt-5">
-          <div class="row">
-            <div class="col-lg-6 justify-content-center d-flex flex-column">
-              <div class="card border-radius-lg">
-                <div class="d-block blur-shadow-image">
-                  <img src="../../assets/img/examples/blog8.jpg" alt="img-blur-shadow-blog-2" class="img-fluid border-radius-lg">
+          <!-- Newest Pubilication -->
+          {% assign newestPublication = site.categories.publications | first %}
+          <div class="col-lg-12 mt-5">
+            <div class="row flex-row-reverse">
+              <div class="col-lg-6 justify-content-center d-flex flex-column">
+                <div class="card border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img
+                      src="{{ newestPublication.image}}"
+                      alt="img-blur-shadow-blog-2"
+                      class="img-fluid border-radius-lg"
+                    />
+                  </div>
                 </div>
               </div>
+              <div
+                class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3"
+              >
+                <h6 class="category text-info mt-3">Publications</h6>
+                <h3>
+                  <a href="{{newestPublication.url}}" class="text-dark"
+                    >{{ newestPublication.title }}</a
+                  >
+                </h3>
+                <p>
+                  {{newestPublication.summary}}<a
+                    href="{{ newestPublication.url}}"
+                    class="text-darker icon-move-right text-sm"
+                    >Read More
+                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                  </a>
+                </p>
+              </div>
             </div>
-            <div class="col-lg-6 justify-content-center d-flex flex-column ps-lg-5 pt-lg-0 pt-3">
-              <h6 class="category text-info mt-3">News</h6>
-              <h3>
-                <a href="javascript:;" class="text-dark">Warner Music Group buys concert discovery service Songkick</a>
-              </h3>
-              <p>
-                Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major… <a href="javascript:;" class="text-darker icon-move-right text-sm">Read More
-                  <i class="fas fa-arrow-right text-xs ms-1"></i>
+          </div>
+          <!-- Newest News -->
+          <div class="col-lg-12 mt-5">
+            <div class="row">
+              <div class="col-lg-6 justify-content-center d-flex flex-column">
+                <div class="card border-radius-lg">
+                  <div class="d-block blur-shadow-image">
+                    <img
+                      src="../../assets/img/examples/blog8.jpg"
+                      alt="img-blur-shadow-blog-2"
+                      class="img-fluid border-radius-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 justify-content-center d-flex flex-column ps-lg-5 pt-lg-0 pt-3"
+              >
+                <h6 class="category text-info mt-3">News</h6>
+                <h3>
+                  <a href="javascript:;" class="text-dark"
+                    >Warner Music Group buys concert discovery service
+                    Songkick</a
+                  >
+                </h3>
+                <p>
+                  Warner Music Group announced today it’s acquiring the selected
+                  assets of the music platform Songkick, including its app for
+                  finding concerts and the company’s trademark. Songkick has
+                  been involved in a lawsuit against the major…
+                  <a
+                    href="javascript:;"
+                    class="text-darker icon-move-right text-sm"
+                    >Read More
+                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- News Carousel -->
+          <section class="pt-7 position-relative">
+            <h2>News</h2>
+            <div id="carousel-testimonials" class="carousel slide carousel-team" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                {% assign sorted_posts = site.categories.news | sort: "date" %}
+                {% for post in sorted_posts %}
+                <div class="carousel-item {% if forloop.last %}active {% endif %}">
+                  <div class="row align-items-center">
+                    <div class="col-md-12 me-lg-auto position-relative">
+                      <h1 class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom">
+                        {{post.content}}
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+              <!-- <div class="position-relative mt-n6">
+                <a
+                  class="carousel-control-prev text-dark position-absolute bottom-0 end-0 ms-auto"
+                  href="#carousel-testimonials"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <i
+                    class="fas fa-2x fa-chevron-left position-absolute start-0 ms-3 mt-7 mt-md-0 ms-n5 ms-md-0"
+                  ></i>
+                  <span class="sr-only">Previous</span>
                 </a>
+                <a
+                  class="carousel-control-next text-dark position-absolute bottom-0 end-0 ms-auto ms-4"
+                  href="#carousel-testimonials"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <i class="fas fa-2x fa-chevron-right mt-7 mt-md-0"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div> -->
+            </div>
+          </section>
+
+          <!-- Group Member -->
+          <div class="row pt-7">
+            <div class="col-lg-6">
+              <h2>About Our Team</h2>
+              <p>
+                简单来说就是这里写点，我们需要什么方面的潜在的学生什么的，欢迎大家加入我们
               </p>
+              <div class="avatar-group">
+                {% for groupCategory in site.groupCategories %} {% if
+                groupCategory.members %} {% for member in groupCategory.members
+                %}
+                <a
+                  href="/people#{{groupCategory.label}}"
+                  class="avatar avatar-lg rounded-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="{{ member.name }}"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="../../assets/img/memoji/{{member.pic}}"
+                  />
+                </a>
+                {% endfor %} {% endif %} {% endfor %}
+              </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="row pt-7">
-          <div class="col-lg-6">
-            <h2>About Our Team</h2>
-            <p>简单来说就是这里写点，我们需要什么方面的潜在的学生什么的，欢迎大家加入我们</p>
-            <div class="avatar-group">
-              {% for groupCategory in site.groupCategories %}
-              {% if groupCategory.members %}
-              {% for member in groupCategory.members %}
-              <a href="/people#{{groupCategory.label}}" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ member.name }}">
-                <img alt="Image placeholder" src="../../assets/img/memoji/{{member.pic}}">
-              </a>
-              {% endfor %}
-              {% endif %}
-              {% endfor %}
+            <div
+              class="col-lg-6 text-end d-flex flex-column justify-content-center"
+            >
+              <!-- <button type="button" class="btn bg-gradient-info mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2">Join Team</button> -->
+              <a
+                href="/opening"
+                class="btn bg-gradient-success mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2"
+                >Join Us</a
+              >
             </div>
-          </div>
-          <div class="col-lg-6 text-end d-flex flex-column justify-content-center">
-            <!-- <button type="button" class="btn bg-gradient-info mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2">Join Team</button> -->
-            <a href="/opening" class="btn bg-gradient-success mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2">Join Us</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- -------- END SECTION 3 w/ waves and typed text ------- -->
+    </section>
+    <!-- -------- END SECTION 3 w/ waves and typed text ------- -->
 
-  
-
-  <!-- -------- START FOOTER 5 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  {% include footer.html %}
-  <!-- -------- END FOOTER 5 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <!--   Core JS Files   -->
-  {% include jsfile.html %}
-  <script>
-    if (document.getElementById('typed')) {
-      var typed = new Typed("#typed", {
-        stringsElement: '#typed-strings',
-        typeSpeed: 70,
-        backSpeed: 50,
-        backDelay: 200,
-        startDelay: 500,
-        loop: true
+    <!-- -------- START FOOTER 5 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+    {% include footer.html %}
+    <!-- -------- END FOOTER 5 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+    <!--   Core JS Files   -->
+    {% include jsfile.html %}
+    <script>
+      if (document.getElementById("typed")) {
+        var typed = new Typed("#typed", {
+          stringsElement: "#typed-strings",
+          typeSpeed: 70,
+          backSpeed: 50,
+          backDelay: 200,
+          startDelay: 500,
+          loop: true,
+        });
+      }
+    </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
       });
-    }
-  </script>
-  <script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-  </script>
-</body>
-
+    </script>
+    <script>
+      var myCarousel = document.querySelector("#carousel-testimonials");
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // 1 seconds
+      });
+    </script>
+  </body>
 </html>

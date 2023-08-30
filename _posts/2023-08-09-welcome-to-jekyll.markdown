@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-08-09 20:01:42 +0800
-categories: firstCategory secondCategory
+categories: test
 permalink: /testpost
 summary: "this is a summary"
 ---

@@ -1,13 +1,49 @@
 markdown: kramdown
-
+SITE_NAME: "AI4SciDiscovery Lab"
 # footer和navbar 上用的路径
 menuPages:
-  - { name: "Home", url: "/", isIndexHeader: false, isNavbar: true, isFooter: true}
-  - { name: "Reaserch", url: "/research", isIndexHeader: true, isNavbar: true, isFooter: true}
-  - { name: "Publications", url: "/publications", isIndexHeader: true, isNavbar: true, isFooter: true}
-  - { name: "News", url: "/news", isIndexHeader: true, isNavbar: true, isFooter: true}
-  - { name: "People", url: "/people", isIndexHeader: true, isNavbar: true, isFooter: true}
-  - { name: "Opening", url: "/opening", isIndexHeader: false, isNavbar: true, isFooter: true}
+  - {
+      name: "Home",
+      url: "/",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Reaserch",
+      url: "/research",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Publications",
+      url: "/publications",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "News",
+      url: "/news",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "People",
+      url: "/people",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Opening",
+      url: "/opening",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
 
 # footer 上展示的社交媒体
 socialLinks:
@@ -30,7 +66,10 @@ groupCategories:
               [
                 { icon: "github", link: "https://github.com/tailintalent" },
                 { icon: "twitter", link: "https://twitter.com/tailin_wu" },
-                { icon: "google", link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate" },
+                {
+                  icon: "google",
+                  link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate",
+                },
               ],
           },
         ],
@@ -39,7 +78,15 @@ groupCategories:
       icon: "airplane_ticket",
       category: "Postdocs and Research Scientists",
       label: "postdocs-and-research-scientists",
-      members: [{ name: "Long Wei", pic: "longwei.png" }],
+      members:
+        [
+          {
+            name: "Long Wei",
+            pic: "longwei.png",
+            socialLinks:
+              [{ icon: "github", link: "https://github.com/LongWeiZJU" }],
+          },
+        ],
     }
   - { icon: "flight_class", category: "PhD Students", label: "phd-students" }
   - {
@@ -48,9 +95,30 @@ groupCategories:
       label: "research-assistant",
       members:
         [
-          { name: "Wenhao Deng", pic: "wenhaodeng.png" },
-          { name: "Tian Xia", pic: "tianxia.png" },
-          { name: "Yi Dai", pic: "yidai.png" },
+          {
+            name: "Wenhao Deng",
+            pic: "wenhaodeng.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/w3nhao" },
+                { icon: "twitter", link: "https://twitter.com/dw3nhao" },
+              ],
+          },
+          {
+            name: "Tian Xia",
+            pic: "tianxia.png",
+            socialLinks:
+              [{ icon: "twitter", link: "https://twitter.com/summer_ti37" }],
+          },
+          {
+            name: "Yi Dai",
+            pic: "yidai.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/PascalDai" },
+                { icon: "twitter", link: "https://twitter.com/PascalDai" },
+              ],
+          },
         ],
     }
   - {
@@ -59,14 +127,84 @@ groupCategories:
       label: "visiting-students",
       members:
         [
-          { name: "Junjie Shan", pic: "junjieshan.png" },
-          { name: "Hongtao Zheng", pic: "hongtaozheng.png" },
-          { name: "Jiaxin Li", pic: "jiaxinli.png" },
-          { name: "Xianfeng Wu", pic: "xianfengwu.png" },
-          { name: "Zhuohao Ni", pic: "zhuohaoni.png" },
-          { name: "Xiang Zheng", pic: "xiangzheng.png" },
-          { name: "Siyuan Li", pic: "siyuanli.png" },
-          { name: "Tao Zhang", pic: "taozhang.png" },
+          {
+            name: "Junjie Shan",
+            pic: "junjieshan.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/JamerryShan" },
+                { icon: "twitter", link: "https://twitter.com/junjieshan_" },
+              ],
+          },
+          {
+            name: "Hongtao Zheng",
+            pic: "hongtaozheng.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Zhangtao167" },
+                { icon: "twitter", link: "https://twitter.com/zhenghongtao06" },
+              ],
+          },
+          {
+            name: "Jiaxin Li",
+            pic: "jiaxinli.png",
+            socialLinks:
+              [{ icon: "github", link: "https://github.com/Jiaxinlia" }],
+          },
+          {
+            name: "Xianfeng Wu",
+            pic: "xianfengwu.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/XianfengWu01" },
+                { icon: "twitter", link: "https://twitter.com/xianfengwu10" },
+              ],
+          },
+          {
+            name: "Zhuohao Ni",
+            pic: "zhuohaoni.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/ZhuohaoNi" },
+                { icon: "twitter", link: "https://twitter.com/ppppnnnni" },
+              ],
+          },
+          {
+            name: "Xiang Zheng",
+            pic: "xiangzheng.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Ashleyhoho" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/hahaheihei79447",
+                },
+              ],
+          },
+          {
+            name: "Siyuan Li",
+            pic: "siyuanli.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/liaoyanqing666" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/liaoyanqing6666",
+                },
+              ],
+          },
+          {
+            name: "Tao Zhang",
+            pic: "taozhang.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Zhangtao167" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/tozhng979237695",
+                },
+              ],
+          },
         ],
     }
   - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
