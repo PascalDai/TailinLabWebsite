@@ -81,44 +81,6 @@ title: Tailin Wu Lab
     <section class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mt-5">
-            <div class="row">
-              <div class="col-lg-6 justify-content-center d-flex flex-column">
-                <div class="card border-radius-lg">
-                  <div class="d-block blur-shadow-image">
-                    <img
-                      src="../../assets/img/examples/blog8.jpg"
-                      alt="img-blur-shadow-blog-2"
-                      class="img-fluid border-radius-lg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-6 justify-content-center d-flex flex-column ps-lg-5 pt-lg-0 pt-3"
-              >
-                <h6 class="category text-info mt-3">Reaserch</h6>
-                <h3>
-                  <a href="javascript:;" class="text-dark"
-                    >Warner Music Group buys concert discovery service
-                    Songkick</a
-                  >
-                </h3>
-                <p>
-                  Warner Music Group announced today it’s acquiring the selected
-                  assets of the music platform Songkick, including its app for
-                  finding concerts and the company’s trademark. Songkick has
-                  been involved in a lawsuit against the major…
-                  <a
-                    href="javascript:;"
-                    class="text-darker icon-move-right text-sm"
-                    >Read More
-                    <i class="fas fa-arrow-right text-xs ms-1"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
           <!-- Newest Pubilication -->
           {% assign newestPublication = site.categories.publications | first %}
           <div class="col-lg-12 mt-5">
@@ -145,7 +107,7 @@ title: Tailin Wu Lab
                 </h3>
                 <p>
                   {{newestPublication.summary}}<a
-                    href="{{ newestPublication.url}}"
+                    href="/publications"
                     class="text-darker icon-move-right text-sm"
                     >Read More
                     <i class="fas fa-arrow-right text-xs ms-1"></i>
@@ -154,57 +116,119 @@ title: Tailin Wu Lab
               </div>
             </div>
           </div>
-          <!-- Newest News -->
-          <div class="col-lg-12 mt-5">
-            <div class="row">
-              <div class="col-lg-6 justify-content-center d-flex flex-column">
-                <div class="card border-radius-lg">
-                  <div class="d-block blur-shadow-image">
-                    <img
-                      src="../../assets/img/examples/blog8.jpg"
-                      alt="img-blur-shadow-blog-2"
-                      class="img-fluid border-radius-lg"
-                    />
+          <!-- Talks  -->
+          {% assign talks = site.categories.talks %}
+          <div class="col-lg-12 mx-auto pt-7">
+            <h2>Invited Talks</h2>
+            <div class="accordion" id="accordionRental">
+              <div class="accordion-item mb-3">
+                <h5 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button border-bottom font-weight-bold text-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Featured talks
+                    <i
+                      class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                    <i
+                      class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                  </button>
+                </h5>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionRental"
+                >
+                  <br class="accordion-body text-sm opacity-8" />
+                  <div class="row">
+                    {% for talk in site.tags["featured talks"] %}
+                    <div class="col-sm-6 col-lg-4 mt-lg-0 mt-4">
+                      <h5>
+                        {{ talk.date | date: "%Y/%m"}}{% for link in talk.links
+                        %}
+                        <span class="badge bg-info"
+                          ><a href="{{link.url}}">{{link.name}}</a></span
+                        >
+                        {% endfor %}
+                      </h5>
+                      <p class="text-sm">{{ talk.content}}</p>
+                    </div>
+                    {% endfor %}
                   </div>
                 </div>
               </div>
-              <div
-                class="col-lg-6 justify-content-center d-flex flex-column ps-lg-5 pt-lg-0 pt-3"
-              >
-                <h6 class="category text-info mt-3">News</h6>
-                <h3>
-                  <a href="javascript:;" class="text-dark"
-                    >Warner Music Group buys concert discovery service
-                    Songkick</a
+              <div class="accordion-item mb-3">
+                <h5 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button border-bottom font-weight-bold text-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
                   >
-                </h3>
-                <p>
-                  Warner Music Group announced today it’s acquiring the selected
-                  assets of the music platform Songkick, including its app for
-                  finding concerts and the company’s trademark. Songkick has
-                  been involved in a lawsuit against the major…
-                  <a
-                    href="javascript:;"
-                    class="text-darker icon-move-right text-sm"
-                    >Read More
-                    <i class="fas fa-arrow-right text-xs ms-1"></i>
-                  </a>
-                </p>
+                    Other talks
+                    <i
+                      class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                    <i
+                      class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                  </button>
+                </h5>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionRental"
+                >
+                  <div class="accordion-body text-sm opacity-8">
+                    <div class="row">
+                      {% for talk in site.tags["other talks"] %}
+                      <div class="col-sm-6 col-lg-4 mt-lg-1 mt-4">
+                        <h5>
+                          {{ talk.date | date: "%Y/%m"}} {% for link in
+                          talk.links %}
+                          <span class="badge bg-info"
+                            ><a href="{{link.url}}">{{link.name}}</a></span
+                          >
+                          {% endfor %}
+                        </h5>
+                        <p class="text-sm">{{ talk.content}}</p>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
           <!-- News Carousel -->
           <section class="pt-7 position-relative">
             <h2>News</h2>
-            <div id="carousel-testimonials" class="carousel slide carousel-team" data-bs-ride="carousel">
+            <div
+              id="carousel-testimonials"
+              class="carousel slide carousel-team"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-inner">
                 {% assign sorted_posts = site.categories.news | sort: "date" %}
                 {% for post in sorted_posts %}
-                <div class="carousel-item {% if forloop.last %}active {% endif %}">
+                <div
+                  class="carousel-item {% if forloop.last %}active {% endif %}"
+                >
                   <div class="row align-items-center">
                     <div class="col-md-12 me-lg-auto position-relative">
-                      <h1 class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom">
+                      <h1
+                        class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom"
+                      >
                         {{post.content}}
                       </h1>
                     </div>

@@ -10,15 +10,15 @@ menuPages:
       isFooter: true,
     }
   - {
-      name: "Reaserch",
-      url: "/research",
+      name: "Publications",
+      url: "/publications",
       isIndexHeader: true,
       isNavbar: true,
       isFooter: true,
     }
   - {
-      name: "Publications",
-      url: "/publications",
+      name: "Talks",
+      url: "/talks",
       isIndexHeader: true,
       isNavbar: true,
       isFooter: true,
