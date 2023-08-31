@@ -15,10 +15,9 @@ permalink: /talks
         <div class="row">
           <div class="col-md-auto my-auto ms-md-3 mt-md-auto mt-4">
             <h5>{{post.date | date: "%Y/%m"}}</h5>
-            {{post.content}} {% for link in post.links%}
-              <span class="badge bg-info"
-                ><a href="{{link.url}}">{{link.name}}</a></span
-              >
+            {{post.content}} 
+              {% for link in post.links%}
+              <span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span>
               {% endfor %}
             <p class="text-dark">
               

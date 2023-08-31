@@ -208,3 +208,13 @@ groupCategories:
         ],
     }
   - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
+  - {
+      icon: "face",
+      category: "Collaborator",
+      label: "collaborator",
+      members:
+        [
+          { name: "Haixin Wang", pic: "haixinwang.png" },
+          { name: "Qianru Zhang", pic: "qianruzhang.png" },
+        ],
+    }
