@@ -17,15 +17,19 @@ title: Tailin Wu Lab
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbar-header-2"
-            aria-controls="navbar-header-2"
+            data-bs-toggle="collapse"
+            data-bs-target="#navigation"
+            aria-controls="navigation"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-header-2">
+          <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav mx-auto">
               {% for menuPage in site.menuPages %} {% if menuPage.isIndexHeader
               %}
