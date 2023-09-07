@@ -1,5 +1,6 @@
 ---
 title: Tailin Wu Lab
+lang: en
 ---
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ title: Tailin Wu Lab
         class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none"
       >
         <div class="container">
-          <a class="navbar-brand text-white" href="/">Tailin Wu Lab</a>
+          <a class="navbar-brand text-white" href="/">{{site.data.l10n.title}}</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -45,10 +46,15 @@ title: Tailin Wu Lab
               {% for socialLink in site.socialLinks %}
               <li class="nav-item">
                 <a class="nav-link text-white" href="{{ socialLink.link}}">
-                  <i class="fab {{socialLink.icon}}"></i>
+                  <i class="fa-brands {{socialLink.icon}}"></i>
                 </a>
               </li>
               {% endfor %}
+              <li>
+                <a class="nav-link text-white" href="/{{lang}}{{page.url}}">
+                  <i class="fa-solid fa-language"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

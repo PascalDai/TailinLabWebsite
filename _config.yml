@@ -47,8 +47,8 @@ menuPages:
 
 # footer 上展示的社交媒体
 socialLinks:
-  - { icon: "fa-github", link: "https://github.com/tailintalent" }
-  - { icon: "fa-twitter", link: "https://twitter.com/tailin_wu" }
+  - { icon: "fa-github-alt", link: "https://github.com/tailintalent" }
+  - { icon: "fa-x-twitter", link: "https://twitter.com/tailin_wu" }
 
 copyright: "Tailin Wu Lab"
 
@@ -218,3 +218,11 @@ groupCategories:
           { name: "Qianru Zhang", pic: "qianruzhang.png" },
         ],
     }
+
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["assets/css","assets/fonts","assets/js"]
+parallel_localization: true
