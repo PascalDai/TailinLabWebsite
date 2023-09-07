@@ -32,7 +32,7 @@ lang: en
           </button>
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav mx-auto">
-              {% for menuPage in site.menuPages %} {% if menuPage.isIndexHeader
+              {% for menuPage in site.data.l10n.menuPages %} {% if menuPage.isIndexHeader
               %}
               <li class="nav-item">
                 <a class="nav-link text-white" href="{{menuPage.url}}">
@@ -51,9 +51,15 @@ lang: en
               </li>
               {% endfor %}
               <li>
-                <a class="nav-link text-white" href="/{{lang}}{{page.url}}">
+                {% if site.active_lang == site.default_lang %}
+                <a class="nav-link text-white" href="{{site.url}}/zh">
                   <i class="fa-solid fa-language"></i>
                 </a>
+                {% else %}
+                <a class="nav-link text-white" href="{{site.url}}">
+                  <i class="fa-solid fa-language"></i>
+                </a>
+                {% endif %}
               </li>
             </ul>
           </div>
@@ -278,7 +284,7 @@ lang: en
                 简单来说就是这里写点，我们需要什么方面的潜在的学生什么的，欢迎大家加入我们
               </p>
               <div class="avatar-group">
-                {% for groupCategory in site.groupCategories %} {% if
+                {% for groupCategory in site.data.l10n.groupCategories %} {% if
                 groupCategory.members %} {% for member in groupCategory.members
                 %}
                 <a

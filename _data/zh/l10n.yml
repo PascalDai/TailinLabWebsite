@@ -1,0 +1,212 @@
+title: "吴泰霖实验室"
+
+menuPages:
+  - {
+      name: "网站主页",
+      url: "/",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "学术论文",
+      url: "/publications",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "会议演讲",
+      url: "/talks",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "新闻",
+      url: "/news",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "团队成员",
+      url: "/people",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "招聘信息",
+      url: "/opening",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
+
+groupCategories:
+  - {
+      icon: "flight",
+      category: "Principal Investigator",
+      label: "principal-investigator",
+      members:
+        [
+          {
+            name: "吴泰霖",
+            pic: "tailinwu.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/tailintalent" },
+                { icon: "twitter", link: "https://twitter.com/tailin_wu" },
+                {
+                  icon: "google",
+                  link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate",
+                },
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "airplane_ticket",
+      category: "Postdocs and Research Scientists",
+      label: "postdocs-and-research-scientists",
+      members:
+        [
+          {
+            name: "魏龙",
+            pic: "longwei.png",
+            socialLinks:
+              [{ icon: "github", link: "https://github.com/LongWeiZJU" }],
+          },
+        ],
+    }
+  - { icon: "flight_class", category: "PhD Students", label: "phd-students" }
+  - {
+      icon: "assignment_ind",
+      category: "Research Assistant",
+      label: "research-assistant",
+      members:
+        [
+          {
+            name: "邓文豪",
+            pic: "wenhaodeng.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/w3nhao" },
+                { icon: "twitter", link: "https://twitter.com/dw3nhao" },
+              ],
+          },
+          {
+            name: "夏天",
+            pic: "tianxia.png",
+            socialLinks:
+              [{ icon: "twitter", link: "https://twitter.com/summer_ti37" }],
+          },
+          {
+            name: "戴艺",
+            pic: "yidai.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/PascalDai" },
+                { icon: "twitter", link: "https://twitter.com/PascalDai" },
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "flight_land",
+      category: "Visiting Students",
+      label: "visiting-students",
+      members:
+        [
+          {
+            name: "单俊杰",
+            pic: "junjieshan.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/JamerryShan" },
+                { icon: "twitter", link: "https://twitter.com/junjieshan_" },
+              ],
+          },
+          {
+            name: "郑宏涛",
+            pic: "hongtaozheng.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Zhangtao167" },
+                { icon: "twitter", link: "https://twitter.com/zhenghongtao06" },
+              ],
+          },
+          {
+            name: "李嘉欣",
+            pic: "jiaxinli.png",
+            socialLinks:
+              [{ icon: "github", link: "https://github.com/Jiaxinlia" }],
+          },
+          {
+            name: "吴显峰",
+            pic: "xianfengwu.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/XianfengWu01" },
+                { icon: "twitter", link: "https://twitter.com/xianfengwu10" },
+              ],
+          },
+          {
+            name: "倪卓豪",
+            pic: "zhuohaoni.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/ZhuohaoNi" },
+                { icon: "twitter", link: "https://twitter.com/ppppnnnni" },
+              ],
+          },
+          {
+            name: "郑想",
+            pic: "xiangzheng.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Ashleyhoho" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/hahaheihei79447",
+                },
+              ],
+          },
+          {
+            name: "黎思源",
+            pic: "siyuanli.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/liaoyanqing666" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/liaoyanqing6666",
+                },
+              ],
+          },
+          {
+            name: "张涛",
+            pic: "taozhang.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Zhangtao167" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/tozhng979237695",
+                },
+              ],
+          },
+        ],
+    }
+  - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
+  - {
+      icon: "face",
+      category: "Collaborator",
+      label: "collaborator",
+      members:
+        [
+          { name: "汪海昕", pic: "haixinwang.png" },
+          { name: "张倩茹", pic: "qianruzhang.png" },
+        ],
+    }

@@ -28,7 +28,7 @@ permalink: /people
             <ul
               class="nav flex-column bg-white border-radius-lg p-3 position-sticky top-10 shadow-lg"
             >
-              {% for groupCategory in site.groupCategories %}
+              {% for groupCategory in site.data.l10n.groupCategories %}
               {% if groupCategory.members %}
               <li class="nav-item">
                 <a
@@ -47,7 +47,7 @@ permalink: /people
             </ul>
           </div>
           <div class="col-lg-9">
-            {% for groupCategory in site.groupCategories %}
+            {% for groupCategory in site.data.l10n.groupCategories %}
             {% if groupCategory.members %}
             <div class="card shadow-lg mb-5">
               <div

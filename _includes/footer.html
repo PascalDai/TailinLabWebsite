@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mb-4 mx-auto text-center">
-        {% for menuPage in site.menuPages %}
+        {% for menuPage in site.data.l10n.menuPages %}
         <a href="{{menuPage.url}}" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
           {{menuPage.name}}
         </a>
