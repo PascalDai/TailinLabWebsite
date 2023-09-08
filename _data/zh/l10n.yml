@@ -23,7 +23,7 @@ menuPages:
       isFooter: true,
     }
   - {
-      name: "新闻",
+      name: "新闻咨询",
       url: "/news",
       isIndexHeader: true,
       isNavbar: true,
@@ -47,7 +47,7 @@ menuPages:
 groupCategories:
   - {
       icon: "flight",
-      category: "Principal Investigator",
+      category: "实验室负责人",
       label: "principal-investigator",
       members:
         [
@@ -68,7 +68,7 @@ groupCategories:
     }
   - {
       icon: "airplane_ticket",
-      category: "Postdocs and Research Scientists",
+      category: "博士后研究员",
       label: "postdocs-and-research-scientists",
       members:
         [
@@ -83,7 +83,7 @@ groupCategories:
   - { icon: "flight_class", category: "PhD Students", label: "phd-students" }
   - {
       icon: "assignment_ind",
-      category: "Research Assistant",
+      category: "科研助理和行政助理",
       label: "research-assistant",
       members:
         [
@@ -115,7 +115,7 @@ groupCategories:
     }
   - {
       icon: "flight_land",
-      category: "Visiting Students",
+      category: "访问学生",
       label: "visiting-students",
       members:
         [
@@ -202,7 +202,7 @@ groupCategories:
   - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
   - {
       icon: "face",
-      category: "Collaborator",
+      category: "合作者",
       label: "collaborator",
       members:
         [
@@ -210,3 +210,20 @@ groupCategories:
           { name: "张倩茹", pic: "qianruzhang.png" },
         ],
     }
+
+menuItems:
+  talks: "会议演讲"
+  people: "团队成员"
+  publications: "学术论文"
+  news: "新闻资讯"
+  opening: "招聘信息"
+  join_us: "加入我们"
+  about_our_team: "关于团队"
+  invited_talks: "受邀会议"
+  featured_talks: "专题演讲"
+  other_talks: "其他演讲"
+
+mainpageContent:
+  title: "实验室的目标是"
+  subtitles: ["攻坚克难","开拓新领域"]
+  quote: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color."

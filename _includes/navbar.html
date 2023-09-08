@@ -6,7 +6,7 @@
       <a class="navbar-brand font-weight-bold d-block d-md-none" href="/" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
         {{site.data.l10n.title}}
       </a>
-      <a href="/opening" class="btn btn-sm  bg-gradient-success  mb-0 ms-auto d-lg-none d-block">Join Us</a>
+      <a href="/opening" class="btn btn-sm  bg-gradient-success  mb-0 ms-auto d-lg-none d-block">{{ site.data.l10n.menuItems.join_us }}</a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
           <span class="navbar-toggler-bar bar1"></span>
@@ -19,19 +19,19 @@
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="/talks">
               <i class="material-icons opacity-6 me-2 text-md">psychology_alt</i>
-              Talks
+              {{ site.data.l10n.menuItems.talks }}
             </a>
           </li>
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPeople" data-bs-toggle="dropdown" aria-expanded="false" role="button">
               <i class="material-icons opacity-6 me-2 text-md">diversity_2</i>
-              People
+              {{ site.data.l10n.menuItems.people}}
               <img src="/assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuPeople">
               <div class="d-none d-lg-block">
                 <ul class="list-group">
-                  {% for groupCategory in site.groupCategories %}
+                  {% for groupCategory in site.data.l10n.groupCategories %}
                   {% if groupCategory.members %}
                   <li class="nav-item list-group-item border-0 p-0">
                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="/people#{{groupCategory.label}}">
@@ -47,7 +47,7 @@
               </div>
               <div class="row d-lg-none">
                 <div class="col-md-12 g-0">
-                  {% for groupCategory in site.groupCategories %}
+                  {% for groupCategory in site.data.l10n.groupCategories %}
                   {% if groupCategory.members %}
                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="/people#{{groupCategory.label}}">
                       <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">{{groupCategory.category}}</h6>
@@ -64,19 +64,19 @@
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="/publications">
               <i class="material-icons opacity-6 me-2 text-md">mode_comment</i>
-              Publications
+              {{ site.data.l10n.menuItems.publications }}
             </a>
           </li>
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="/news">
               <i class="material-icons opacity-6 me-2 text-md">newspaper</i>
-              News
+              {{ site.data.l10n.menuItems.news }}
             </a>
           </li>
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false" role="button">
               <i class="material-icons opacity-6 me-2 text-md">meeting_room</i>
-              Opening
+              {{ site.data.l10n.menuItems.opening }}
               <img src="/assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
@@ -107,7 +107,7 @@
         </ul>
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
-            <a href="/opening" class="btn btn-sm  bg-gradient-success  mb-0 me-1">Join Us</a>
+            <a href="/opening" class="btn btn-sm  bg-gradient-success  mb-0 me-1">{{site.data.l10n.menuItems.join_us}}</a>
           </li>
         </ul>
       </div>

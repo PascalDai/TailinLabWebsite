@@ -83,7 +83,7 @@ groupCategories:
   - { icon: "flight_class", category: "PhD Students", label: "phd-students" }
   - {
       icon: "assignment_ind",
-      category: "Research Assistant",
+      category: "Research Assistant and Administrative Assistant",
       label: "research-assistant",
       members:
         [
@@ -210,3 +210,20 @@ groupCategories:
           { name: "Qianru Zhang", pic: "qianruzhang.png" },
         ],
     }
+
+menuItems:
+  talks: "Talks"
+  people: "People"
+  publications: "Publications"
+  news: "News"
+  opening: "Opening"
+  join_us: "加入我们"
+  about_our_team: "About Our Team"
+  invited_talks: "Invited Talk"
+  featured_talks: "Featured talks"
+  other_talks: "Other talks"
+
+mainpageContent:
+  title: "Our lab mission is to"
+  subtitles: ["solve important AI + Science problems","open new frontiers"]
+  quote: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color."
