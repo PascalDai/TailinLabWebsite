@@ -3,6 +3,7 @@ layout: post
 title: "博士后"
 subTitle: "西湖大学工学院吴泰霖AI+Science实验室博士后招聘启事"
 categories: opening postdoctoral
+lang: zh
 ---
 ## 一、导师简介
 吴泰霖博士为西湖大学工学院人工智能方向新入职助理教授。  
