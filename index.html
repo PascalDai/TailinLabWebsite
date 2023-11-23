@@ -14,7 +14,9 @@ lang: en
         class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none"
       >
         <div class="container">
-          <a class="navbar-brand text-white" href="/">{{site.data.l10n.title}}</a>
+          <a class="navbar-brand text-white" href="/"
+            >{{site.data.l10n.title}}</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -32,8 +34,8 @@ lang: en
           </button>
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav mx-auto">
-              {% for menuPage in site.data.l10n.menuPages %} {% if menuPage.isIndexHeader
-              %}
+              {% for menuPage in site.data.l10n.menuPages %} {% if
+              menuPage.isIndexHeader %}
               <li class="nav-item">
                 <a class="nav-link text-white" href="{{menuPage.url}}">
                   {{ menuPage.name}}
@@ -52,11 +54,11 @@ lang: en
               {% endfor %}
               <li>
                 {% if site.active_lang == site.default_lang %}
-                <a class="nav-link text-white" href="{{site.url}}/zh">
+                <a class="nav-link text-white" href="{{site.website}}/zh">
                   <i class="fa-solid fa-language"></i>
                 </a>
                 {% else %}
-                <a class="nav-link text-white" href="{{site.url}}">
+                <a class="nav-link text-white" href="{{site.website}}">
                   <i class="fa-solid fa-language"></i>
                 </a>
                 {% endif %}
@@ -171,7 +173,8 @@ lang: en
                     {% for talk in site.tags["featured talks"] %}
                     <div class="col-sm-6 col-lg-4 mt-lg-0 mt-4">
                       <h5>
-                        {{ talk.date | date: "%Y/%m"}}{% for link in talk.links%}
+                        {{ talk.date | date: "%Y/%m"}}{% for link in
+                        talk.links%}
                         <span class="badge bg-info"
                           ><a href="{{link.url}}">{{link.name}}</a></span
                         >

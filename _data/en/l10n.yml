@@ -83,7 +83,7 @@ groupCategories:
   - { icon: "flight_class", category: "PhD Students", label: "phd-students" }
   - {
       icon: "assignment_ind",
-      category: "Research Assistant and Administrative Assistant",
+      category: "Research Assistant",
       label: "research-assistant",
       members:
         [
@@ -144,6 +144,38 @@ groupCategories:
               [{ icon: "github", link: "https://github.com/Jiaxinlia" }],
           },
           {
+            name: "Siyuan Li",
+            pic: "siyuanli.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/liaoyanqing666" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/liaoyanqing6666",
+                },
+              ],
+          },
+          {
+            name: "Tao Zhang",
+            pic: "taozhang.png",
+            socialLinks:
+              [
+                { icon: "github", link: "https://github.com/Zhangtao167" },
+                {
+                  icon: "twitter",
+                  link: "https://twitter.com/tozhng979237695",
+                },
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "flight_takeoff",
+      category: "Alumnus",
+      label: "alumnus",
+      members:
+        [
+          {
             name: "Xianfeng Wu",
             pic: "xianfengwu.png",
             socialLinks:
@@ -173,33 +205,8 @@ groupCategories:
                 },
               ],
           },
-          {
-            name: "Siyuan Li",
-            pic: "siyuanli.png",
-            socialLinks:
-              [
-                { icon: "github", link: "https://github.com/liaoyanqing666" },
-                {
-                  icon: "twitter",
-                  link: "https://twitter.com/liaoyanqing6666",
-                },
-              ],
-          },
-          {
-            name: "Tao Zhang",
-            pic: "taozhang.png",
-            socialLinks:
-              [
-                { icon: "github", link: "https://github.com/Zhangtao167" },
-                {
-                  icon: "twitter",
-                  link: "https://twitter.com/tozhng979237695",
-                },
-              ],
-          },
         ],
     }
-  - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
   - {
       icon: "face",
       category: "Collaborator",
@@ -225,5 +232,5 @@ menuItems:
 
 mainpageContent:
   title: "Our lab mission is to"
-  subtitles: ["solve important AI + Science problems","open new frontiers"]
+  subtitles: ["solve important AI + Science problems", "open new frontiers"]
   quote: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color."

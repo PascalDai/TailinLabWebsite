@@ -144,24 +144,6 @@ groupCategories:
               [{ icon: "github", link: "https://github.com/Jiaxinlia" }],
           },
           {
-            name: "吴显峰",
-            pic: "xianfengwu.png",
-            socialLinks:
-              [
-                { icon: "github", link: "https://github.com/XianfengWu01" },
-                { icon: "twitter", link: "https://twitter.com/xianfengwu10" },
-              ],
-          },
-          {
-            name: "倪卓豪",
-            pic: "zhuohaoni.png",
-            socialLinks:
-              [
-                { icon: "github", link: "https://github.com/ZhuohaoNi" },
-                { icon: "twitter", link: "https://twitter.com/ppppnnnni" },
-              ],
-          },
-          {
             name: "郑想",
             pic: "xiangzheng.png",
             socialLinks:
@@ -225,5 +207,5 @@ menuItems:
 
 mainpageContent:
   title: "实验室的目标是"
-  subtitles: ["攻坚克难","开拓新领域"]
+  subtitles: ["攻坚克难", "开拓新领域"]
   quote: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color."
