@@ -23,7 +23,7 @@ menuPages:
       isFooter: true,
     }
   - {
-      name: "新闻咨询",
+      name: "新闻资讯",
       url: "/news",
       isIndexHeader: true,
       isNavbar: true,
@@ -54,10 +54,19 @@ groupCategories:
           {
             name: "吴泰霖",
             pic: "tailinwu.png",
+            hasMemoji: true,
+            searchInterests:
+              ["AI用于科学仿真", "AI用于科学控制和设计", "AI用于科学发现"],
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/tailintalent" },
-                { icon: "twitter", link: "https://twitter.com/tailin_wu" },
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/tailintalent",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/tailin_wu",
+                },
                 {
                   icon: "google",
                   link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate",
@@ -75,8 +84,26 @@ groupCategories:
           {
             name: "魏龙",
             pic: "longwei.png",
+            searchInterests: ["机器学习", "人工智能用于科学研究"],
             socialLinks:
-              [{ icon: "github", link: "https://github.com/LongWeiZJU" }],
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/LongWeiZJU",
+                },
+              ],
+          },
+          {
+            name: "陈潜溢",
+            pic: "qianyichen.png",
+            searchInterests: ["数据驱动物理仿真", "物理感知机器学习"],
+            socialLinks:
+              [
+                {
+                  icon: "fa-brands fa-wix",
+                  link: "https://chen458438184.wixsite.com/biography",
+                },
+              ],
           },
         ],
     }
@@ -90,25 +117,54 @@ groupCategories:
           {
             name: "邓文豪",
             pic: "wenhaodeng.png",
+            hasMemoji: true,
+            searchInterests: ["语言模型", "信息检索", "智能体"],
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/w3nhao" },
-                { icon: "twitter", link: "https://twitter.com/dw3nhao" },
+                { icon: "fab fa-github", link: "https://github.com/w3nhao" },
+                { icon: "fab fa-twitter", link: "https://twitter.com/dw3nhao" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:wenhao.deng@foxmail.com",
+                },
+                {
+                  icon: "fab fa-github-alt",
+                  link: "https://w3nhao.github.io/",
+                },
               ],
           },
           {
             name: "夏天",
             pic: "tianxia.png",
+            hasMemoji: true,
+            searchInterests: ["材料科学", "机器学习"],
             socialLinks:
-              [{ icon: "twitter", link: "https://twitter.com/summer_ti37" }],
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/Lunar13737",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/summer_ti37",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:xiatian20@westlake.edu.cn",
+                },
+              ],
           },
           {
             name: "戴艺",
             pic: "yidai.png",
+            hasMemoji: true,
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/PascalDai" },
-                { icon: "twitter", link: "https://twitter.com/PascalDai" },
+                { icon: "fab fa-github", link: "https://github.com/PascalDai" },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/PascalDai",
+                },
               ],
           },
         ],
@@ -122,47 +178,55 @@ groupCategories:
           {
             name: "单俊杰",
             pic: "junjieshan.png",
+            hasMemoji: true,
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/JamerryShan" },
-                { icon: "twitter", link: "https://twitter.com/junjieshan_" },
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/JamerryShan",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/junjieshan_",
+                },
               ],
           },
           {
             name: "郑宏涛",
             pic: "hongtaozheng.png",
+            hasMemoji: true,
+            searchInterests: ["PDE求解", "不确定性量化"],
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/Zhangtao167" },
-                { icon: "twitter", link: "https://twitter.com/zhenghongtao06" },
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/Zhangtao167",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/zhenghongtao06",
+                },
               ],
           },
           {
             name: "李嘉欣",
             pic: "jiaxinli.png",
+            hasMemoji: true,
             socialLinks:
-              [{ icon: "github", link: "https://github.com/Jiaxinlia" }],
-          },
-          {
-            name: "郑想",
-            pic: "xiangzheng.png",
-            socialLinks:
-              [
-                { icon: "github", link: "https://github.com/Ashleyhoho" },
-                {
-                  icon: "twitter",
-                  link: "https://twitter.com/hahaheihei79447",
-                },
-              ],
+              [{ icon: "fab fa-github", link: "https://github.com/Jiaxinlia" }],
           },
           {
             name: "黎思源",
             pic: "siyuanli.png",
+            hasMemoji: true,
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/liaoyanqing666" },
                 {
-                  icon: "twitter",
+                  icon: "fab fa-github",
+                  link: "https://github.com/liaoyanqing666",
+                },
+                {
+                  icon: "fab fa-twitter",
                   link: "https://twitter.com/liaoyanqing6666",
                 },
               ],
@@ -170,26 +234,176 @@ groupCategories:
           {
             name: "张涛",
             pic: "taozhang.png",
+            hasMemoji: true,
+            searchInterests: ["控制论", "机器学习", "反向设计"],
             socialLinks:
               [
-                { icon: "github", link: "https://github.com/Zhangtao167" },
                 {
-                  icon: "twitter",
+                  icon: "fab fa-github",
+                  link: "https://github.com/Zhangtao167",
+                },
+                {
+                  icon: "fab fa-twitter",
                   link: "https://twitter.com/tozhng979237695",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:zhangtao@westlake.edu.cn",
+                },
+              ],
+          },
+          {
+            name: "余成磊",
+            pic: "chengleiyu.png",
+            hasMemoji: true,
+            searchInterests: ["蛋白质优化", "神经网络", "物理系统"],
+            socialLinks:
+              [{ icon: "fab fa-github", link: "https://github.com/oYCLo" }],
+          },
+          {
+            name: "胡佩炎",
+            pic: "peiyanhu.png",
+            hasMemoji: false,
+            searchInterests: ["AI for PDEs", "Ai for Physics"],
+            socialLinks:
+              [
+                {
+                  icon: "far fa-envelope",
+                  link: "hupeiyan18@mails.ucas.ac.cn",
+                },
+              ],
+          },
+          {
+            name: "何润东",
+            pic: "rundonghe.png",
+            hasMemoji: true,
+            searchInterests: ["不确定性估计", "分布外检测", "鲁棒弱监督学习"],
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github-alt",
+                  link: "https://rundonghe.github.io",
+                },
+              ],
+          },
+          {
+            name: "冯睿骐",
+            pic: "ruiqifeng.png",
+            hasMemoji: false,
+            searchInterests: ["人工智能应用于科学"],
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github-alt",
+                  link: "https://weenming.github.io",
+                },
+              ],
+          },
+          {
+            name: "杜奕轩",
+            pic: "yixuandu.png",
+            hasMemoji: false,
+            searchInterests: ["图机器学习", "AI4SCI"],
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/Duyx5149" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:yixuantu42@gmail.com",
                 },
               ],
           },
         ],
     }
-  - { icon: "flight_takeoff", category: "Alumnus", label: "alumnus" }
+  - {
+      icon: "flight_takeoff",
+      category: "毕业生&前成员",
+      label: "alumnus",
+      members:
+        [
+          {
+            name: "吴显峰",
+            pic: "xianfengwu.png",
+            hasMemoji: true,
+            searchInterests:
+              ["三维视觉", "人工智能用于科学发现", "可信机器学习"],
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/XianfengWu01",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/xianfengwu10",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:wxf20011228@gmail.com",
+                },
+                {
+                  icon: "fab fa-github-alt",
+                  link: "https://maradona10wxf.github.io/",
+                },
+              ],
+          },
+          {
+            name: "倪卓豪",
+            pic: "zhuohaoni.png",
+            hasMemoji: true,
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/ZhuohaoNi" },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/ppppnnnni",
+                },
+              ],
+          },
+          {
+            name: "郑想",
+            pic: "xiangzheng.png",
+            hasMemoji: true,
+            searchInterests: ["物理预测仿真"],
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/Ashleyhoho",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/hahaheihei79447",
+                },
+                { icon: "far fa-envelope", link: "mailto:1793434271@qq.com" },
+              ],
+          },
+        ],
+    }
+  #undergraduate
+  - {
+      icon: "group",
+      category: "本科生",
+      label: "undergraduate",
+      members:
+        [
+          { name: "吴泽邦", pic: "zebangwu.png", hasMemoji: true },
+          { name: "江易娴", pic: "yixianjiang.png", hasMemoji: true },
+        ],
+    }
   - {
       icon: "face",
       category: "合作者",
       label: "collaborator",
       members:
         [
-          { name: "汪海昕", pic: "haixinwang.png" },
-          { name: "张倩茹", pic: "qianruzhang.png" },
+          {
+            name: "汪海昕",
+            pic: "haixinwang.png",
+            hasMemoji: true,
+            searchInterests: ["深度学习", "科学智能"],
+          },
+          { name: "张倩茹", pic: "qianruzhang.png", hasMemoji: true },
         ],
     }
 

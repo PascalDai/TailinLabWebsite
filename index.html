@@ -271,7 +271,7 @@ lang: en
               <div class="avatar-group">
                 {% for groupCategory in site.data.l10n.groupCategories %} {% if
                 groupCategory.members %} {% for member in groupCategory.members
-                %}
+                %}{% if member.hasMemoji %}
                 <a
                   href="/people#{{groupCategory.label}}"
                   class="avatar avatar-lg rounded-circle"
@@ -284,7 +284,7 @@ lang: en
                     src="../../assets/img/memoji/{{member.pic}}"
                   />
                 </a>
-                {% endfor %} {% endif %} {% endfor %}
+                {% endif %} {% endfor %} {% endif %} {% endfor %}
               </div>
             </div>
             <div
