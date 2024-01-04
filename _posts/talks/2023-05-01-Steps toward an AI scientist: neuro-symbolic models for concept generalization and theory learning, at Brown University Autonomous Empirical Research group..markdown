@@ -4,4 +4,7 @@ title: "Steps toward an AI scientist: neuro-symbolic models for concept generali
 categories: talks
 tags: ["other talks"]
 ---
-Steps toward an AI scientist: neuro-symbolic models for concept generalization and theory learning, at Brown University Autonomous Empirical Research group.
+
+###### [{{page.date | date: "%Y/%m"}}]Steps toward an AI scientist: neuro-symbolic models for concept generalization and theory learning, at Brown University Autonomous Empirical Research group.
+
+{% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}

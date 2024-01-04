@@ -172,14 +172,6 @@ lang: en
                   <div class="row">
                     {% for talk in site.tags["featured talks"] %}
                     <div class="col-sm-6 col-lg-4 mt-lg-0 mt-4">
-                      <h5>
-                        {{ talk.date | date: "%Y/%m"}}{% for link in
-                        talk.links%}
-                        <span class="badge bg-info"
-                          ><a href="{{link.url}}">{{link.name}}</a></span
-                        >
-                        {% endfor %}
-                      </h5>
                       <p class="text-sm">{{ talk.content}}</p>
                     </div>
                     {% endfor %}
@@ -215,14 +207,6 @@ lang: en
                     <div class="row">
                       {% for talk in site.tags["other talks"] %}
                       <div class="col-sm-6 col-lg-4 mt-lg-1 mt-4">
-                        <h5>
-                          {{ talk.date | date: "%Y/%m"}} {% for link in
-                          talk.links %}
-                          <span class="badge bg-info"
-                            ><a href="{{link.url}}">{{link.name}}</a></span
-                          >
-                          {% endfor %}
-                        </h5>
                         <p class="text-sm">{{ talk.content}}</p>
                       </div>
                       {% endfor %}

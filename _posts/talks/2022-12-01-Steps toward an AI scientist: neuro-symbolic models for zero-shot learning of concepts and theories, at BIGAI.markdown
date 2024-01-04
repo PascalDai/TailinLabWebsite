@@ -4,4 +4,7 @@ title: "Steps toward an AI scientist: neuro-symbolic models for zero-shot learni
 categories: talks
 tags: ["other talks"]
 ---
-Steps toward an AI scientist: neuro-symbolic models for zero-shot learning of concepts and theories, at BIGAI
+
+###### [{{page.date | date: "%Y/%m"}}]Steps toward an AI scientist: neuro-symbolic models for zero-shot learning of concepts and theories, at BIGAI
+
+{% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}

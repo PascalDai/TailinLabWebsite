@@ -53,50 +53,9 @@ backgroundPic: "/assets/img/publicationsbg.jpg"
             </div>
           </div>
         </div>
-        <!-- top2~top4 publication -->
-        {% assign publicationsSubset = site.categories.publications | slice:1,3
-        %}
-        <div class="container">
-          <div class="row mt-5">
-            {% for publication in publicationsSubset %}
-            <div class="col-lg-4 mb-lg-0 mb-4">
-              <!-- Start Card Blog Fullbackground - text centered -->
-              <div class="card card-background shadow-lg">
-                <div
-                  class="full-background"
-                  style="
-                      background-image: url('{{ publication.image}}');
-                    "
-                  loading="lazy"
-                ></div>
-                <div class="card-body pt-12">
-                  <h6
-                    class="category text-warning mt-3 text-uppercase font-weight-bold"
-                  >
-                    {{ publication.tag}}
-                  </h6>
-                  <a href="{{publication.url}}"
-                    ><h4 class="text-white">{{publication.title}}</h4></a
-                  >
-                  <div class="text-dark bg-light border-radius-md">
-                    {{publication.content}}
-                  </div>
-                  <!-- <span class="badge bg-info">{{publication.content}}</span>  -->
-                  {% for link in publication.links %}
-                  <span class="badge bg-info"
-                    ><a href="{{link.url}}">{{link.name}}</a></span
-                  >
-                  {% endfor %}
-                </div>
-              </div>
-              <!-- End Card Blog Fullbackground - text centered -->
-            </div>
-            {% endfor %}
-          </div>
-        </div>
         <!-- other publications -->
         {% assign otherpublications = site.categories.publications |
-        slice:4,site.categories.publications.size %} {% for publication in
+        slice:1,site.categories.publications.size %} {% for publication in
         otherpublications %}
         <div class="card card-plain card-blog mt-5">
           <div class="row">

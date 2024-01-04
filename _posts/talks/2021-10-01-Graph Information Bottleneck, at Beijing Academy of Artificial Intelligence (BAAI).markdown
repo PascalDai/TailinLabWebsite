@@ -4,4 +4,7 @@ title: "Graph Information Bottleneck, at Beijing Academy of Artificial Intellige
 categories: talks
 tags: ["other talks"]
 ---
-Graph Information Bottleneck, at Beijing Academy of Artificial Intelligence (BAAI)
+
+###### [{{page.date | date: "%Y/%m"}}]Graph Information Bottleneck, at Beijing Academy of Artificial Intelligence (BAAI)
+
+{% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}

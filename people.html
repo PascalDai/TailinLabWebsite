@@ -25,7 +25,7 @@ title: People
     <section class="pt-3 pt-md-5 pb-md-5 pt-lg-8 bg-gray-200">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 mb-lg-0 mb-5 mt-8 mt-md-5 mt-lg-0">
+          <div class="col-lg-3 mb-lg-0 mb-5 mt-8 mt-md-5 mt-lg-0">
             <ul
               class="nav flex-column bg-white border-radius-lg p-3 position-sticky top-10 shadow-lg"
             >
@@ -46,7 +46,7 @@ title: People
               {% endif %} {% endfor %}
             </ul>
           </div>
-          <div class="col-lg-10">
+          <div class="col-lg-9">
             {% for groupCategory in site.data.l10n.groupCategories %} {% if
             groupCategory.members %}
             <div class="card shadow-lg mb-5">
@@ -62,7 +62,7 @@ title: People
 
               <div class="card-body p-5">
                 <div class="row">
-                  {% for member in groupCategory.members %}
+                  <!-- {% for member in groupCategory.members %}
                   <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card card-body">
                       <div class="row">
@@ -87,6 +87,43 @@ title: People
                           </a>
                           {% endfor %} {% endif %}
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %} -->
+                  {% for member in groupCategory.members %}
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                      <div class="card-header p-0 position-relative">
+                        <a class="d-block blur-shadow-image">
+                          <img
+                            src="../../assets/img/pic/{{member.pic}}"
+                            alt="img-blur-shadow"
+                            class="img-fluid shadow border-radius-lg"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="card-body px-0">
+                        <h5>
+                          <a
+                            href="javascript:;"
+                            class="text-dark font-weight-bold"
+                            >{{member.name}}</a
+                          >
+                        </h5>
+                        {% if member.searchInterests %} {% for searchInterest in
+                        member.searchInterests %}
+                        <p class="text-sm mb-0">{{searchInterest}}</p>
+                        {% endfor %} {% endif %} {% if member.socialLinks %} {%
+                        for socialLink in member.socialLinks %}
+                        <a
+                          href="{{ socialLink.link}}"
+                          class="btn btn-simple px-2 mb-0"
+                        >
+                          <i class="{{socialLink.icon}} text-lg"></i>
+                        </a>
+                        {% endfor %} {% endif %}
                       </div>
                     </div>
                   </div>

@@ -63,6 +63,7 @@ groupCategories:
               ],
             socialLinks:
               [
+                { icon: "fa-solid fa-user", link: "http://tailin.org" },
                 {
                   icon: "fab fa-github",
                   link: "https://github.com/tailintalent",
@@ -75,7 +76,6 @@ groupCategories:
                   icon: "google",
                   link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate",
                 },
-                { icon: "wordpress", link: "http://tailin.org" },
               ],
           },
         ],
@@ -111,7 +111,7 @@ groupCategories:
             socialLinks:
               [
                 {
-                  icon: "fa-brands fa-wix",
+                  icon: "fa-solid fa-user",
                   link: "https://chen458438184.wixsite.com/biography",
                 },
               ],
@@ -130,18 +130,15 @@ groupCategories:
             pic: "wenhaodeng.png",
             hasMemoji: true,
             searchInterests:
-              ["Language Model", "Infomation Retrieval", "Agents"],
+              ["Language Model", "Information Retrieval", "Agents"],
             socialLinks:
               [
+                { icon: "fa-solid fa-user", link: "https://w3nhao.github.io/" },
                 { icon: "fab fa-github", link: "https://github.com/w3nhao" },
                 { icon: "fab fa-twitter", link: "https://twitter.com/dw3nhao" },
                 {
                   icon: "far fa-envelope",
                   link: "mailto:wenhao.deng@foxmail.com",
-                },
-                {
-                  icon: "fab fa-github-alt",
-                  link: "https://w3nhao.github.io/",
                 },
               ],
           },
@@ -300,7 +297,7 @@ groupCategories:
             socialLinks:
               [
                 {
-                  icon: "fab fa-github-alt",
+                  icon: "fa-solid fa-user",
                   link: "https://rundonghe.github.io",
                 },
               ],
@@ -308,12 +305,12 @@ groupCategories:
           {
             name: "Ruiqi Feng",
             pic: "ruiqifeng.png",
-            hasMemoji: false,
+            hasMemoji: true,
             searchInterests: ["AI for scientific"],
             socialLinks:
               [
                 {
-                  icon: "fab fa-github-alt",
+                  icon: "fa-solid fa-user",
                   link: "https://weenming.github.io",
                 },
               ],
@@ -332,6 +329,13 @@ groupCategories:
                 },
               ],
           },
+          {
+            name: "Rui Wang",
+            pic: "ruiwang.png",
+            hasMemoji: false,
+            searchInterests: ["AI for science", "AI for communication"],
+            socialLinks: [],
+          },
         ],
     }
   - {
@@ -349,6 +353,10 @@ groupCategories:
             socialLinks:
               [
                 {
+                  icon: "fa-solid fa-user",
+                  link: "https://maradona10wxf.github.io/",
+                },
+                {
                   icon: "fab fa-github",
                   link: "https://github.com/XianfengWu01",
                 },
@@ -359,10 +367,6 @@ groupCategories:
                 {
                   icon: "far fa-envelope",
                   link: "mailto:wxf20011228@gmail.com",
-                },
-                {
-                  icon: "fab fa-github-alt",
-                  link: "https://maradona10wxf.github.io/",
                 },
               ],
           },
@@ -397,6 +401,19 @@ groupCategories:
                 { icon: "far fa-envelope", link: "mailto:1793434271@qq.com" },
               ],
           },
+          {
+            name: "Yu Wang",
+            pic: "yuwang.png",
+            hasMemoji: false,
+            searchInterests:
+              [
+                "Retrosynthesis Prediction",
+                "Protein-protein Interaction Design",
+                "Drug Discovery",
+              ],
+            socialLinks:
+              [{ icon: "fab fa-github", link: "https://github.com/wangyu-sd" }],
+          },
         ],
     }
     #undergraduate
@@ -406,7 +423,7 @@ groupCategories:
       label: "undergraduate",
       members:
         [
-          { name: "Zeibang Wu", pic: "zebangwu.png", hasMemoji: true },
+          { name: "Zebang Wu", pic: "zebangwu.png", hasMemoji: true },
           { name: "Yixian Jiang", pic: "yixianjiang.png", hasMemoji: true },
         ],
     }

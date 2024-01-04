@@ -4,4 +4,7 @@ title: "Phase transitions for the information bottleneck, UIUC"
 categories: talks
 tags: ["other talks"]
 ---
-Phase transitions for the information bottleneck, UIUC
+
+###### [{{page.date | date: "%Y/%m"}}]Phase transitions for the information bottleneck, UIUC
+
+{% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}

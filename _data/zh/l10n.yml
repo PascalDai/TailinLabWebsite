@@ -59,6 +59,7 @@ groupCategories:
               ["AI用于科学仿真", "AI用于科学控制和设计", "AI用于科学发现"],
             socialLinks:
               [
+                { icon: "fa-solid fa-user", link: "http://tailin.org" },
                 {
                   icon: "fab fa-github",
                   link: "https://github.com/tailintalent",
@@ -100,7 +101,7 @@ groupCategories:
             socialLinks:
               [
                 {
-                  icon: "fa-brands fa-wix",
+                  icon: "fa-solid fa-user",
                   link: "https://chen458438184.wixsite.com/biography",
                 },
               ],
@@ -121,15 +122,12 @@ groupCategories:
             searchInterests: ["语言模型", "信息检索", "智能体"],
             socialLinks:
               [
+                { icon: "fa-solid fa-user", link: "https://w3nhao.github.io/" },
                 { icon: "fab fa-github", link: "https://github.com/w3nhao" },
                 { icon: "fab fa-twitter", link: "https://twitter.com/dw3nhao" },
                 {
                   icon: "far fa-envelope",
                   link: "mailto:wenhao.deng@foxmail.com",
-                },
-                {
-                  icon: "fab fa-github-alt",
-                  link: "https://w3nhao.github.io/",
                 },
               ],
           },
@@ -281,7 +279,7 @@ groupCategories:
             socialLinks:
               [
                 {
-                  icon: "fab fa-github-alt",
+                  icon: "fa-solid fa-user",
                   link: "https://rundonghe.github.io",
                 },
               ],
@@ -294,7 +292,7 @@ groupCategories:
             socialLinks:
               [
                 {
-                  icon: "fab fa-github-alt",
+                  icon: "fa-solid fa-user",
                   link: "https://weenming.github.io",
                 },
               ],
@@ -313,6 +311,13 @@ groupCategories:
                 },
               ],
           },
+          {
+            name: "王锐",
+            pic: "ruiwang.png",
+            hasMemoji: false,
+            searchInterests: ["AI应用于科学", "AI用于通信"],
+            socialLinks: [],
+          },
         ],
     }
   - {
@@ -330,6 +335,10 @@ groupCategories:
             socialLinks:
               [
                 {
+                  icon: "fa-solid fa-user",
+                  link: "https://maradona10wxf.github.io/",
+                },
+                {
                   icon: "fab fa-github",
                   link: "https://github.com/XianfengWu01",
                 },
@@ -340,10 +349,6 @@ groupCategories:
                 {
                   icon: "far fa-envelope",
                   link: "mailto:wxf20011228@gmail.com",
-                },
-                {
-                  icon: "fab fa-github-alt",
-                  link: "https://maradona10wxf.github.io/",
                 },
               ],
           },
@@ -377,6 +382,15 @@ groupCategories:
                 },
                 { icon: "far fa-envelope", link: "mailto:1793434271@qq.com" },
               ],
+          },
+          {
+            name: "王豫",
+            pic: "yuwang.png",
+            hasMemoji: false,
+            searchInterests:
+              ["逆合成预测", "蛋白质-蛋白质相互作用设计", "药物探索"],
+            socialLinks:
+              [{ icon: "fab fa-github", link: "https://github.com/wangyu-sd" }],
           },
         ],
     }

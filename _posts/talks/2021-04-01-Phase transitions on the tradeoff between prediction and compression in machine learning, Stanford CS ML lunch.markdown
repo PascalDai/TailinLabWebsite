@@ -4,4 +4,7 @@ title: "Phase transitions on the tradeoff between prediction and compression in 
 categories: talks
 tags: ["other talks"]
 ---
-Phase transitions on the tradeoff between prediction and compression in machine learning, Stanford CS ML lunch
+
+###### [{{page.date | date: "%Y/%m"}}]Phase transitions on the tradeoff between prediction and compression in machine learning, Stanford CS ML lunch
+
+{% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}

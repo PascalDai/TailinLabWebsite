@@ -4,4 +4,7 @@ title: "Learning to accelerate simulation and inverse optimization of PDEs via l
 categories: talks
 tags: ["other talks"]
 ---
-Learning to accelerate simulation and inverse optimization of PDEs via latent global evolution, Stanford CS ML lunch
+
+###### [{{page.date | date: "%Y/%m"}}]Learning to accelerate simulation and inverse optimization of PDEs via latent global evolution, Stanford CS ML lunch
+
+{% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}

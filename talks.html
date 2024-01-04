@@ -11,16 +11,10 @@ permalink: /talks/
     <div class="row justify-space-between py-2">
       {% assign sorted_posts = site.categories.talks %} {% for post in
       sorted_posts %}
-      <div class="card card-plain card-blog mt-5">
+      <div class="card card-plain card-blog">
         <div class="row">
-          <div class="col-md-auto my-auto ms-md-3 mt-md-auto mt-4">
-            <h5>{{post.date | date: "%Y/%m"}}</h5>
-            {{post.content}} {% for link in post.links%}
-            <span class="badge bg-info"
-              ><a href="{{link.url}}">{{link.name}}</a></span
-            >
-            {% endfor %}
-            <p class="text-dark"></p>
+          <div class="col-md-auto my-auto ms-md-3 mt-md-auto mb-4">
+            {{post.content}}
           </div>
         </div>
       </div>
