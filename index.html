@@ -252,13 +252,13 @@ lang: en
               <p>
                 简单来说就是这里写点，我们需要什么方面的潜在的学生什么的，欢迎大家加入我们
               </p>
-              <div class="avatar-group">
+              <div class="col-12">
                 {% for groupCategory in site.data.l10n.groupCategories %} {% if
                 groupCategory.members %} {% for member in groupCategory.members
                 %}{% if member.hasMemoji %}
                 <a
                   href="/people#{{groupCategory.label}}"
-                  class="avatar avatar-lg rounded-circle"
+                  class="avatar avatar-lg"
                   data-bs-toggle="tooltip"
                   data-bs-placement="bottom"
                   title="{{ member.name }}"

@@ -73,7 +73,7 @@ groupCategories:
                   link: "https://twitter.com/tailin_wu",
                 },
                 {
-                  icon: "google",
+                  icon: "fab fa-google",
                   link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate",
                 },
               ],
@@ -274,7 +274,7 @@ groupCategories:
           {
             name: "Peiyan Hu",
             pic: "peiyanhu.png",
-            hasMemoji: false,
+            hasMemoji: true,
             searchInterests: ["AI for PDEs", "Ai for Physics"],
             socialLinks:
               [
@@ -318,7 +318,7 @@ groupCategories:
           {
             name: "Yixuan Du",
             pic: "yixuandu.png",
-            hasMemoji: false,
+            hasMemoji: true,
             searchInterests: ["Graph machine learning", "AI4SCI"],
             socialLinks:
               [
@@ -332,7 +332,7 @@ groupCategories:
           {
             name: "Rui Wang",
             pic: "ruiwang.png",
-            hasMemoji: false,
+            hasMemoji: true,
             searchInterests: ["AI for science", "AI for communication"],
             socialLinks: [],
           },
