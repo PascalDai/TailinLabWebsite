@@ -455,6 +455,8 @@ menuItems:
   featured_talks: "Featured talks"
   other_talks: "Other talks"
 
+our_team_subtitle: "The Journey is the Reward"
+
 mainpageContent:
   title: "Our lab mission is to"
   subtitles: ["solve important AI + Science problems", "open new frontiers"]

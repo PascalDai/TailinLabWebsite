@@ -54,11 +54,11 @@ lang: en
               {% endfor %}
               <li>
                 {% if site.active_lang == site.default_lang %}
-                <a class="nav-link text-white" href="{{site.website}}/zh">
+                <a class="nav-link text-white" href="/zh{{page.url}}">
                   <i class="fa-solid fa-language"></i>
                 </a>
                 {% else %}
-                <a class="nav-link text-white" href="{{site.website}}">
+                <a class="nav-link text-white" href=" {{page.url}}">
                   <i class="fa-solid fa-language"></i>
                 </a>
                 {% endif %}
@@ -249,9 +249,7 @@ lang: en
           <div class="row pt-7">
             <div class="col-lg-6">
               <h2>{{ site.data.l10n.menuItems.about_our_team}}</h2>
-              <p>
-                简单来说就是这里写点，我们需要什么方面的潜在的学生什么的，欢迎大家加入我们
-              </p>
+              <p>{{ site.data.l10n.our_team_subtitle }}</p>
               <div class="col-12">
                 {% for groupCategory in site.data.l10n.groupCategories %} {% if
                 groupCategory.members %} {% for member in groupCategory.members
