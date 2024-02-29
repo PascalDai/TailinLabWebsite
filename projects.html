@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Projects"
+subTitle: ""
+permalink: /projects/
+backgroundPic: "/assets/img/publicationsbg.jpg"
+---
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- highlight publication -->
+        {% assign highlightProject = site.categories.projects | first %}
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
+            >
+              <div class="card">
+                <div class="d-block blur-shadow-image">
+                  <img
+                    src="{{ highlightProject.image }}"
+                    alt="img-blur-shadow-blog-2"
+                    class="img-fluid border-radius-lg"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
+            >
+              <h6
+                class="category text-warning mt-3 text-uppercase font-weight-bold"
+              >
+                {{ highlightProject.tag}}
+              </h6>
+              <h3 class="card-title">
+                <a href="{{ highlightProject.url }}" class="text-dark"
+                  >{{ highlightProject.title}}</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- other projects -->
+        {% assign otherprojects = site.categories.projects |
+        slice:1,site.categories.projects.size %} {% for project in otherprojects
+        %}
+        <div class="card card-plain card-blog mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              {% if project.image %}
+              <div
+                class="card-image position-relative border-radius-lg cursor-pointer"
+              >
+                <div class="blur-shadow-image">
+                  <img class="img border-radius-lg" src="{{ project.image}}" />
+                </div>
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+              <p
+                class="text-xs text-uppercase font-weight-bold text-gradient text-warning mb-2"
+              >
+                {{project.tag}}
+              </p>
+              <h3 class="text-dark cursor-pointer">{{project.title}}</h3>
+              <p>{{project.content}}</p>
+              <div class="col-12">
+                {% for link in project.links %}
+                <span class="badge bg-info"
+                  ><a href="{{link.url}}">{{link.name}}</a></span
+                >
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

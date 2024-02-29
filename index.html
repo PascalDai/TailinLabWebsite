@@ -68,7 +68,7 @@ lang: en
         </div>
       </nav>
       <div
-        class="page-header min-vh-100"
+        class="page-header min-vh-50"
         style="background-image: url(assets/img/indexbg.jpg)"
         loading="lazy"
       >
@@ -90,7 +90,7 @@ lang: en
               <p class="lead text-white text-center pe-5 mt-4">
                 <!-- The time is now for it to be okay to be great. People in this
                 world shun people for being great. For being a bright color. -->
-                {{ site.data.l10n.mainpageContent.quote}}
+                <!-- {{ site.data.l10n.mainpageContent.quote}} -->
               </p>
               <br />
             </div>
@@ -103,6 +103,46 @@ lang: en
     <section class="py-5">
       <div class="container">
         <div class="row">
+          <div class="col-lg-12 mt-5">
+            <div class="row flex-row-reverse">
+              <div class="col-lg-6 justify-content-center d-flex flex-column">
+                <div class="card border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img
+                      src="/assets/img/figures.png"
+                      alt="img-blur-shadow-blog-2"
+                      class="img-fluid border-radius-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3"
+              >
+                <h3>
+                  <a href="" class="text-dark"
+                    >Our lab's research solves the core and universal problems
+                    at the intersection of AI (deep learning) and scientific
+                    disciplines, including:</a
+                  >
+                </h3>
+                <p>
+                  (1) AI for large-scale scientific simulations, design, and
+                  control (for fluid dynamics, aerospace engineering, mechanical
+                  engineering, materials science, life sciences) using
+                  generative models and foundation models;
+                </p>
+                <p>
+                  (2) AI for scientific discovery (for life sciences and
+                  physics);
+                </p>
+                <p>
+                  (3) Representation learning with graph neural networks,
+                  generative models, and information theory
+                </p>
+              </div>
+            </div>
+          </div>
           <!-- Newest Pubilication -->
           {% assign newestPublication = site.categories.publications | first %}
           <div class="col-lg-12 mt-5">
@@ -121,11 +161,13 @@ lang: en
               <div
                 class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3"
               >
-                <h6 class="category text-info mt-3">Publications</h6>
-                <h3>
-                  <a href="{{newestPublication.url}}" class="text-dark"
-                    >{{ newestPublication.title }}</a
+                <h6 class="category text-info mt-3">
+                  <a href="/publications" style="color: #1a73e8"
+                    >Publications</a
                   >
+                </h6>
+                <h3>
+                  <a href="" class="text-dark">{{ newestPublication.title }}</a>
                 </h3>
                 <p>
                   {{newestPublication.summary}}<a
@@ -141,7 +183,9 @@ lang: en
           <!-- Talks  -->
           {% assign talks = site.categories.talks %}
           <div class="col-lg-12 mx-auto pt-7">
-            <h2>{{ site.data.l10n.menuItems.invited_talks}}</h2>
+            <a href="/talks"
+              ><h2>{{ site.data.l10n.menuItems.invited_talks}}</h2></a
+            >
             <div class="accordion" id="accordionRental">
               <div class="accordion-item mb-3">
                 <h5 class="accordion-header" id="headingOne">
@@ -218,7 +262,7 @@ lang: en
           </div>
           <!-- News Carousel -->
           <section class="pt-7 position-relative">
-            <h2>{{site.data.l10n.menuItems.news}}</h2>
+            <a href="/news"><h2>{{site.data.l10n.menuItems.news}}</h2></a>
             <div
               id="carousel-testimonials"
               class="carousel slide carousel-team"
@@ -247,8 +291,10 @@ lang: en
 
           <!-- Group Member -->
           <div class="row pt-7">
-            <div class="col-lg-6">
-              <h2>{{ site.data.l10n.menuItems.about_our_team}}</h2>
+            <div class="col-lg-10">
+              <a href="/people"
+                ><h2>{{ site.data.l10n.menuItems.about_our_team}}</h2></a
+              >
               <p>{{ site.data.l10n.our_team_subtitle }}</p>
               <div class="col-12">
                 {% for groupCategory in site.data.l10n.groupCategories %} {% if
@@ -270,7 +316,7 @@ lang: en
               </div>
             </div>
             <div
-              class="col-lg-6 text-end d-flex flex-column justify-content-center"
+              class="col-lg-2 text-end d-flex flex-column justify-content-center"
             >
               <!-- <button type="button" class="btn bg-gradient-info mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2">Join Team</button> -->
               <a

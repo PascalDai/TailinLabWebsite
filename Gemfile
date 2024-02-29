@@ -5,4 +5,6 @@ gemspec
 
 group :jekyll_plugins do
     gem "jekyll-polyglot"
+    gem "jekyll-katex"
+    gem "kramdown-math-katex"
  end
