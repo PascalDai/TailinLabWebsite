@@ -13,16 +13,18 @@ lang: en
       <nav
         class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none"
       >
-        <div class="container">
-          <a class="navbar-brand text-white" href="/"
-            >{{site.data.l10n.title}}</a
+        <div class="container justify-content-between">
+          <a class="navbar-brand col col-lg-4" href="/"
+            ><h6 class="text-white text-start" style="white-space: normal">
+              {{site.data.l10n.title}}
+            </h6></a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-white"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navigation"
-            aria-controls="navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -32,38 +34,58 @@ lang: en
               <span class="navbar-toggler-bar bar3"></span>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav mx-auto">
-              {% for menuPage in site.data.l10n.menuPages %} {% if
-              menuPage.isIndexHeader %}
-              <li class="nav-item">
-                <a class="nav-link text-white" href="{{menuPage.url}}">
-                  {{ menuPage.name}}
-                </a>
-              </li>
-              {% endif %} {% endfor %}
-            </ul>
-
-            <ul class="nav navbar-nav">
-              {% for socialLink in site.socialLinks %}
-              <li class="nav-item">
-                <a class="nav-link text-white" href="{{ socialLink.link}}">
-                  <i class="fa-brands {{socialLink.icon}}"></i>
-                </a>
-              </li>
-              {% endfor %}
-              <li>
-                {% if site.active_lang == site.default_lang %}
-                <a class="nav-link text-white" href="/zh{{page.url}}">
-                  <i class="fa-solid fa-language"></i>
-                </a>
-                {% else %}
-                <a class="nav-link text-white" href=" {{page.url}}">
-                  <i class="fa-solid fa-language"></i>
-                </a>
-                {% endif %}
-              </li>
-            </ul>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+                Index
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                {% for menuPage in site.data.l10n.menuPages %} {% if
+                menuPage.isIndexHeader %}
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="{{menuPage.url}}">
+                    {{ menuPage.name}}
+                  </a>
+                </li>
+                {% endif %} {% endfor %}
+              </ul>
+              <ul class="navbar-nav mx-auto">
+                {% for socialLink in site.socialLinks %}
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="{{ socialLink.link}}">
+                    <i class="fa-brands {{socialLink.icon}}"></i>
+                  </a>
+                </li>
+                {% endfor %}
+                <li>
+                  {% if site.active_lang == site.default_lang %}
+                  <a
+                    class="nav-link text-white nav-item"
+                    href="/zh{{page.url}}"
+                  >
+                    <i class="fa-solid fa-language"></i>
+                  </a>
+                  {% else %}
+                  <a class="nav-link text-white" href=" {{page.url}}">
+                    <i class="fa-solid fa-language"></i>
+                  </a>
+                  {% endif %}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -73,7 +95,7 @@ lang: en
         loading="lazy"
       >
         <span class="mask bg-gradient-info opacity-4"></span>
-        <div class="container">
+        <div class="container" style="z-index: 0">
           <div class="row">
             <div class="col-lg-8 text-center mx-auto">
               <h1 class="text-white">

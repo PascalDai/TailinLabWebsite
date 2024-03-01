@@ -1,6 +1,16 @@
 ---
 permalink: /people/
 title: People
+gallary_pics:
+  [
+    { path: "/assets/img/gallary/pic1.png", isFirst: true, index: 0 },
+    { path: "/assets/img/gallary/pic2.png", isFirst: false, index: 1 },
+    { path: "/assets/img/gallary/pic3.png", isFirst: false, index: 2 },
+    { path: "/assets/img/gallary/pic4.png", isFirst: false, index: 3 },
+    { path: "/assets/img/gallary/pic5.png", isFirst: false, index: 4 },
+    { path: "/assets/img/gallary/pic6.png", isFirst: false, index: 5 },
+    { path: "/assets/img/gallary/pic7.png", isFirst: false, index: 6 },
+  ]
 ---
 
 <!--
@@ -25,7 +35,7 @@ title: People
     <section class="pt-3 pt-md-5 pb-md-5 pt-lg-8 bg-gray-200">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 mb-lg-0 mb-5 mt-8 mt-md-5 mt-lg-0">
+          <div class="col-lg-3 mb-lg-0 mb-5 mt-lg-0">
             <ul
               class="nav flex-column bg-white border-radius-lg p-3 position-sticky top-10 shadow-lg"
             >
@@ -44,6 +54,16 @@ title: People
                 </a>
               </li>
               {% endif %} {% endfor %}
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark d-flex align-items-center"
+                  data-scroll
+                  href="#gallary"
+                >
+                  <i class="material-icons text-dark opacity-5 pe-2">image</i>
+                  {{ site.data.l10n.menuItems.gallary }}
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col-lg-9">
@@ -62,35 +82,6 @@ title: People
 
               <div class="card-body p-5">
                 <div class="row">
-                  <!-- {% for member in groupCategory.members %}
-                  <div class="col-lg-6 col-sm-6 mb-4">
-                    <div class="card card-body">
-                      <div class="row">
-                        <div class="col-lg-5 text-end my-auto">
-                          <img
-                            class="avatar avatar-xxl border-radius-lg mt-n5"
-                            src="../../assets/img/pic/{{member.pic}}"
-                          />
-                        </div>
-                        <div class="col-lg-7">
-                          <h5 class="mb-2">{{member.name}}</h5>
-                          {% if member.searchInterests %} {% for searchInterest
-                          in member.searchInterests %}
-                          <p class="text-sm mb-0">{{searchInterest}}</p>
-                          {% endfor %} {% endif %} {% if member.socialLinks %}
-                          {% for socialLink in member.socialLinks %}
-                          <a
-                            href="{{ socialLink.link}}"
-                            class="btn btn-simple px-2 mb-0"
-                          >
-                            <i class="{{socialLink.icon}} text-lg"></i>
-                          </a>
-                          {% endfor %} {% endif %}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {% endfor %} -->
                   {% for member in groupCategory.members %}
                   <div class="col-lg-3 col-sm-6">
                     <div class="card card-plain">
@@ -132,6 +123,77 @@ title: People
               </div>
             </div>
             {% endif %} {% endfor %}
+            <div class="card shadow-lg mb-5">
+              <div
+                class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent"
+              >
+                <div class="bg-gradient-info shadow-info border-radius-lg p-3">
+                  <h3 class="text-white mb-0" id="gallary">
+                    {{ site.data.l10n.menuItems.gallary }}
+                  </h3>
+                </div>
+              </div>
+              <div class="card-body p-5">
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <div
+                      id="carouselExampleIndicators"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <ol class="carousel-indicators">
+                        {% for pic in page.gallary_pics %}
+                        <li
+                          data-target="#carouselExampleIndicators"
+                          data-bs-slide-to="{{ pic.index }}"
+                          {%
+                          if
+                          pic.isFirst
+                          %}
+                          class="active"
+                          {%
+                          endif%}
+                        ></li>
+                        {% endfor %}
+                      </ol>
+                      <div class="carousel-inner">
+                        {% for pic in page.gallary_pics %}
+                        <div
+                          class="carousel-item {% if pic.isFirst %}active{% endif %}"
+                        >
+                          <img class="d-block w-100" src="{{ pic.path }}" />
+                        </div>
+                        {% endfor %}
+                      </div>
+                      <a
+                        class="carousel-control-prev"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
