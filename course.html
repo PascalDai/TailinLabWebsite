@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: course
 title: "Frontiers in Computer Science and Technology"
 subTitle: ""
 permalink: /course/
@@ -18,7 +18,13 @@ courseDatas:
           },
         ],
       "date": "2024/2/26",
-      "courseware": "01_Course Introduction.pdf",
+      "coursewares":
+        [
+          {
+            name: "01_Course Introduction.pdf",
+            url: "01_Course Introduction.pdf",
+          },
+        ],
     },
     {
       "week": "2",
@@ -27,15 +33,26 @@ courseDatas:
       "instructors":
         [
           {
-            name: "Tao Lin",
-            url: "https://www.westlake.edu.cn/faculty/tao-lin.html",
-          },
-          {
             name: "Tailin Wu",
             url: "https://www.westlake.edu.cn/faculty/tailin-wu.html",
           },
+          {
+            name: "Tao Lin",
+            url: "https://www.westlake.edu.cn/faculty/tao-lin.html",
+          },
         ],
       "date": "2024/3/4",
+      "coursewares":
+        [
+          {
+            name: "02_deep learning fundamentals.pdf",
+            url: "02_Frontiers in deep learning_1_Tailin Wu.pdf",
+          },
+          {
+            name: "02_optimization.pdf",
+            url: "02_Frontiers in deep learning_2_Tao Lin.pdf",
+          },
+        ],
     },
     {
       "week": "3",
@@ -263,6 +280,15 @@ courseDatas:
         </div>
 
         <br /><br />
+
+        <h3>Course Interactive Notebooks</h3>
+        <a href="https://github.com/AI4Science-WestlakeU/frontiers_in_AI_course"
+          ><h6>
+            https://github.com/AI4Science-WestlakeU/frontiers_in_AI_course
+          </h6></a
+        >
+
+        <br /><br />
         <h3>Course Description</h3>
         <h6>
           This course focuses on the current cutting-edge technologies in the
@@ -407,7 +433,7 @@ courseDatas:
                 <th
                   class="text-uppercase text-secondary font-weight-bolder opacity-7 text-center col-1"
                 >
-                  courseware
+                  Courseware
                 </th>
               </tr>
             </thead>
@@ -440,13 +466,15 @@ courseDatas:
                   </h6>
                 </td>
                 <td>
-                  <a href="/assets/file/courseware/{{courseData.courseware}}">
+                  {% for courseware in courseData.coursewares %}
+                  <a href="/assets/file/courseware/{{courseware.url}}">
                     <h6
                       class="text font-weight-bold mb-0 text-center px-4 text-info"
                     >
-                      {{courseData.courseware}}
+                      {{courseware.name}}
                     </h6>
                   </a>
+                  {% endfor %}
                 </td>
               </tr>
               <tr></tr>

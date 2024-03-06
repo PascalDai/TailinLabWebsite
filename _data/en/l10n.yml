@@ -62,6 +62,7 @@ groupCategories:
             name: "Tailin Wu",
             pic: "tailinwu.png",
             hasMemoji: true,
+            personal_page: "http://tailin.org",
             searchInterests:
               [
                 "AI for scientific simulation",
@@ -101,6 +102,7 @@ groupCategories:
             name: "Long Wei",
             pic: "longwei.png",
             hasMemoji: true,
+            personal_page: "https://longweizju.github.io/",
             searchInterests: ["Machine Learning", "AI for Science"],
             socialLinks:
               [
@@ -118,6 +120,7 @@ groupCategories:
             name: "Qianyi Chen",
             pic: "qianyichen.png",
             hasMemoji: true,
+            personal_page: "https://chen458438184.wixsite.com/biography",
             searchInterests:
               [
                 "Data-driven Physical Simulation",
@@ -184,6 +187,7 @@ groupCategories:
             name: "Ruiqi Feng",
             pic: "ruiqifeng.png",
             hasMemoji: true,
+            personal_page: "https://weenming.github.io",
             searchInterests: ["(2024 fall)", "AI for PDE control"],
             socialLinks:
               [
@@ -219,6 +223,7 @@ groupCategories:
             name: "Wenhao Deng",
             pic: "wenhaodeng.png",
             hasMemoji: true,
+            personal_page: "https://w3nhao.github.io/",
             searchInterests:
               ["Language Model", "Information Retrieval", "Agents"],
             socialLinks:
@@ -396,6 +401,7 @@ groupCategories:
             name: "Xianfeng Wu",
             pic: "xianfengwu.png",
             hasMemoji: true,
+            personal_page: "https://maradona10wxf.github.io/",
             searchInterests:
               ["3D Vision", "AI4Science", "Trustworthy Machine Learning"],
             socialLinks:
@@ -477,6 +483,7 @@ groupCategories:
             name: "Rundong He",
             pic: "rundonghe.png",
             hasMemoji: true,
+            personal_page: "https://rundonghe.github.io",
             searchInterests:
               [
                 "Uncertainty Estimation",

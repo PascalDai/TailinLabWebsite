@@ -62,6 +62,7 @@ groupCategories:
             name: "吴泰霖",
             pic: "tailinwu.png",
             hasMemoji: true,
+            personal_page: "http://tailin.org",
             searchInterests:
               ["AI用于科学仿真", "AI用于科学控制和设计", "AI用于科学发现"],
             socialLinks:
@@ -97,6 +98,7 @@ groupCategories:
             name: "魏龙",
             pic: "longwei.png",
             hasMemoji: true,
+            personal_page: "https://longweizju.github.io/",
             searchInterests: ["机器学习", "人工智能用于科学研究"],
             socialLinks:
               [
@@ -114,6 +116,7 @@ groupCategories:
             name: "陈潜溢",
             pic: "qianyichen.png",
             hasMemoji: true,
+            personal_page: "https://chen458438184.wixsite.com/biography",
             searchInterests: ["数据驱动物理仿真", "物理感知机器学习"],
             socialLinks:
               [
@@ -170,6 +173,7 @@ groupCategories:
             name: "冯睿骐",
             pic: "ruiqifeng.png",
             hasMemoji: true,
+            personal_page: "https://weenming.github.io",
             searchInterests: ["(2024年 秋)", "AI用于控制偏微分方程"],
             socialLinks:
               [
@@ -200,6 +204,7 @@ groupCategories:
             name: "邓文豪",
             pic: "wenhaodeng.png",
             hasMemoji: true,
+            personal_page: "https://w3nhao.github.io/",
             searchInterests: ["语言模型", "信息检索", "智能体"],
             socialLinks:
               [
@@ -368,6 +373,7 @@ groupCategories:
             name: "吴显峰",
             pic: "xianfengwu.png",
             hasMemoji: true,
+            personal_page: "https://maradona10wxf.github.io/",
             searchInterests:
               ["三维视觉", "人工智能用于科学发现", "可信机器学习"],
             socialLinks:
@@ -445,6 +451,7 @@ groupCategories:
             name: "何润东",
             pic: "rundonghe.png",
             hasMemoji: true,
+            personal_page: "https://rundonghe.github.io",
             searchInterests: ["不确定性估计", "分布外检测", "鲁棒弱监督学习"],
             socialLinks:
               [

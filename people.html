@@ -9,7 +9,6 @@ gallary_pics:
     { path: "/assets/img/gallary/pic4.png", isFirst: false, index: 3 },
     { path: "/assets/img/gallary/pic5.png", isFirst: false, index: 4 },
     { path: "/assets/img/gallary/pic6.png", isFirst: false, index: 5 },
-    { path: "/assets/img/gallary/pic7.png", isFirst: false, index: 6 },
   ]
 ---
 
@@ -86,7 +85,10 @@ gallary_pics:
                   <div class="col-lg-3 col-sm-6">
                     <div class="card card-plain">
                       <div class="card-header p-0 position-relative">
-                        <a class="d-block blur-shadow-image">
+                        <a
+                          class="d-block blur-shadow-image"
+                          href="{{member.personal_page}}"
+                        >
                           <img
                             src="../../assets/img/pic/{{member.pic}}"
                             alt="img-blur-shadow"
@@ -98,7 +100,7 @@ gallary_pics:
                       <div class="card-body px-0">
                         <h5>
                           <a
-                            href="javascript:;"
+                            href="{{member.personal_page}}"
                             class="text-dark font-weight-bold"
                             >{{member.name}}</a
                           >
