@@ -13,7 +13,7 @@ tag: "representation learning"
 summary: We introduce a rank pruning method for classification with noisy labels, which provably obtains similar performance as without label noise.
 ---
 
-[Curtis G. Northcutt](https://www.curtisnorthcutt.com/)\*, [Tailin Wu](https://tailin.org/)\*, [Isaac Chuang](http://feynman.mit.edu/ike/homepage/index.html)
+[Curtis G. Northcutt](https://www.curtisnorthcutt.com/)\*, [Tailin Wu](https://tailin.org/)\*, [Isaac Chuang](https://feynman.mit.edu/ike/homepage/index.html)
 
 > **UAI** 2017
 > Cleanlab is built on top of it.

@@ -16,5 +16,5 @@ tag: "ML for simulation"
 summary: Review paper summarizing the key challenges, current frontiers, and open questions of AI4Science, for quantum, atomistic, and continuum systems.
 ---
 
-[Xuan Zhang](https://scholar.google.com/citations?user=DrsDZg4AAAAJ), … [Tailin Wu](https://tailin.org/) (31th/63 author), … [Shuiwang Ji](http://people.tamu.edu/~sji/)  
+[Xuan Zhang](https://scholar.google.com/citations?user=DrsDZg4AAAAJ), … [Tailin Wu](https://tailin.org/) (31th/63 author), … [Shuiwang Ji](https://people.tamu.edu/~sji/)  
 _Review paper summarizing the key challenges, current frontiers, and open questions of AI4Science, for quantum, atomistic, and continuum systems._

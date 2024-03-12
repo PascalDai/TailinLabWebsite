@@ -1,4 +1,4 @@
-title: "吴泰霖实验室"
+title: "人工智能与科学仿真发现实验室"
 
 menuPages:
   - {
@@ -62,12 +62,12 @@ groupCategories:
             name: "吴泰霖",
             pic: "tailinwu.png",
             hasMemoji: true,
-            personal_page: "http://tailin.org",
+            personal_page: "https://tailin.org",
             searchInterests:
               ["AI用于科学仿真", "AI用于科学控制和设计", "AI用于科学发现"],
             socialLinks:
               [
-                { icon: "fa-solid fa-user", link: "http://tailin.org" },
+                { icon: "fa-solid fa-user", link: "https://tailin.org" },
                 {
                   icon: "fab fa-github",
                   link: "https://github.com/tailintalent",

@@ -7,7 +7,7 @@ image: "/assets/img/publications/GIB.png"
 links:
   [
     { name: "arXiv", url: "https://arxiv.org/abs/2010.12811" },
-    { name: "project page", url: "http://snap.stanford.edu/gib/" },
+    { name: "project page", url: "https://snap.stanford.edu/gib/" },
     {
       name: "poster",
       url: "https://tailin.org/wp-content/uploads/2020/11/poster.pdf",
@@ -26,7 +26,7 @@ tag: "Representation Learning"
 summary: "We introduced Graph Information Bottleneck, a principle and representation learning method for learning minimum sufficient information from graph-structured data, significantly improving GNN’s robustness to adversarial attacks and random noise."
 ---
 
-[Tailin Wu](https://tailin.org/)_, [Hongyu Ren](http://hyren.me/)_, [Pan Li](https://sites.google.com/view/panli-purdue/home), [Jure Leskovec](https://cs.stanford.edu/people/jure/)
+[Tailin Wu](https://tailin.org/)_, [Hongyu Ren](https://hyren.me/)_, [Pan Li](https://sites.google.com/view/panli-purdue/home), [Jure Leskovec](https://cs.stanford.edu/people/jure/)
 
 > NeurIPS 2020  
 > <span style="color: red;">Featured</span> in <span style="color: red;">Synced AI Technology & Industry Review (机器之心)</span>  

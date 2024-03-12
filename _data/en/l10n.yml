@@ -62,7 +62,7 @@ groupCategories:
             name: "Tailin Wu",
             pic: "tailinwu.png",
             hasMemoji: true,
-            personal_page: "http://tailin.org",
+            personal_page: "https://tailin.org",
             searchInterests:
               [
                 "AI for scientific simulation",
@@ -71,7 +71,7 @@ groupCategories:
               ],
             socialLinks:
               [
-                { icon: "fa-solid fa-user", link: "http://tailin.org" },
+                { icon: "fa-solid fa-user", link: "https://tailin.org" },
                 {
                   icon: "fab fa-github",
                   link: "https://github.com/tailintalent",

@@ -12,6 +12,6 @@ links:
   ]
 ---
 
-###### [{{page.date | date: "%Y/%m"}}]Steps toward an AI scientist: neuro-symbolic models for concept generalization and theory learning, at [AAAI 2023 Symposium of Computational Approaches to Scientific Discovery](http://cogsys.org/symposium/discovery-2023/schedule.html)
+###### [{{page.date | date: "%Y/%m"}}]Steps toward an AI scientist: neuro-symbolic models for concept generalization and theory learning, at [AAAI 2023 Symposium of Computational Approaches to Scientific Discovery](https://cogsys.org/symposium/discovery-2023/schedule.html)
 
 {% for link in page.links%}<span class="badge bg-info"><a href="{{link.url}}">{{link.name}}</a></span> {% endfor %}
