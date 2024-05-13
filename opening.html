@@ -22,7 +22,9 @@ backgroundPic: "/assets/img/openingbg.jpg"
           </div>
           <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
             <!-- <p class="text-xs text-uppercase font-weight-bold text-gradient text-info mb-2">{{post.title}}</p> -->
-            <h3 class="text-dark cursor-pointer">{{post.title}}</h3>
+            <a href="{{post.url}}">
+              <h3 class="text-dark cursor-pointer">{{post.title}}</h3>
+            </a>
             <p>
               {{post.subTitle}}<a href="{{post.url}}" class="text-dark">
                 Read More

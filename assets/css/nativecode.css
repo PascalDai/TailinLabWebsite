@@ -206,3 +206,7 @@
 .highlight .il {
   color: #ff6600;
 } /* Literal.Number.Integer.Long */
+
+.highlight {
+  background-color: #f7f7f7;
+}

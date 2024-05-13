@@ -23,6 +23,13 @@ menuPages:
       isFooter: true,
     }
   - {
+      name: "博客文章",
+      url: "/blogs",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
       name: "会议演讲",
       url: "/talks",
       isIndexHeader: true,
@@ -131,7 +138,7 @@ groupCategories:
   - {
       icon: "flight_class",
       category: "博士生",
-      label: "phd-students",
+      labe: "phd-students",
       members:
         [
           {
@@ -139,8 +146,12 @@ groupCategories:
             pic: "taozhang.png",
             hasMemoji: true,
             searchInterests: ["(2024年 秋)", "控制论", "机器学习", "反向设计"],
-            socialLinks:
+            sociaLinks:
               [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://zhangtao167.github.io",
+                },
                 {
                   icon: "fab fa-github",
                   link: "https://github.com/Zhangtao167",
@@ -283,6 +294,10 @@ groupCategories:
             socialLinks:
               [
                 {
+                  icon: "fa-solid fa-user",
+                  link: "https://peiyannn.github.io/",
+                },
+                {
                   icon: "far fa-envelope",
                   link: "hupeiyan18@mails.ucas.ac.cn",
                 },
@@ -360,7 +375,19 @@ groupCategories:
             hasMemoji: true,
             searchInterests: ["深度学习", "科学智能"],
           },
-          { name: "张倩茹, 香港大学", pic: "qianruzhang.png", hasMemoji: true },
+          {
+            name: "张倩茹, 香港大学",
+            pic: "qianruzhang.png",
+            hasMemoji: true,
+            personal_page: "https://lizzyhku.github.io",
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://lizzyhku.github.io",
+                },
+              ],
+          },
         ],
     }
   - {
@@ -370,87 +397,9 @@ groupCategories:
       members:
         [
           {
-            name: "吴显峰",
-            pic: "xianfengwu.png",
-            hasMemoji: true,
-            personal_page: "https://maradona10wxf.github.io/",
-            searchInterests:
-              ["三维视觉", "人工智能用于科学发现", "可信机器学习"],
-            socialLinks:
-              [
-                {
-                  icon: "fa-solid fa-user",
-                  link: "https://maradona10wxf.github.io/",
-                },
-                {
-                  icon: "fab fa-github",
-                  link: "https://github.com/XianfengWu01",
-                },
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/xianfengwu10",
-                },
-                {
-                  icon: "far fa-envelope",
-                  link: "mailto:wxf20011228@gmail.com",
-                },
-              ],
-          },
-          {
-            name: "倪卓豪",
-            pic: "zhuohaoni.png",
-            hasMemoji: true,
-            socialLinks:
-              [
-                { icon: "fab fa-github", link: "https://github.com/ZhuohaoNi" },
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/ppppnnnni",
-                },
-              ],
-          },
-          {
-            name: "王豫",
-            pic: "yuwang.png",
-            hasMemoji: false,
-            searchInterests:
-              ["逆合成预测", "蛋白质-蛋白质相互作用设计", "药物探索"],
-            socialLinks:
-              [{ icon: "fab fa-github", link: "https://github.com/wangyu-sd" }],
-          },
-          {
-            name: "郑宏涛",
-            pic: "hongtaozheng.png",
-            hasMemoji: true,
-            searchInterests: ["PDE求解", "不确定性量化"],
-            socialLinks:
-              [
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/zhenghongtao06",
-                },
-              ],
-          },
-          {
-            name: "单俊杰",
-            pic: "junjieshan.png",
-            hasMemoji: true,
-            socialLinks:
-              [
-                {
-                  icon: "fab fa-github",
-                  link: "https://github.com/JamerryShan",
-                },
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/junjieshan_",
-                },
-              ],
-          },
-          {
-            name: "何润东",
+            name: "何润东, 山东大学",
             pic: "rundonghe.png",
-            hasMemoji: true,
+            hasMemoji: false,
             personal_page: "https://rundonghe.github.io",
             searchInterests: ["不确定性估计", "分布外检测", "鲁棒弱监督学习"],
             socialLinks:
@@ -461,10 +410,69 @@ groupCategories:
                 },
               ],
           },
+          {
+            name: "倪卓豪",
+            pic: "zhuohaoni.png",
+            hasMemoji: false,
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/ZhuohaoNi" },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/ppppnnnni",
+                },
+              ],
+          },
+        ],
+      stanfordStudents:
+        [
+          {
+            name: "Megan Tjandrasuwita",
+            url: "https://megantj.com/",
+            exp: "summer intern, 2021 → Ph.D. student at",
+            schoolname: "MIT EECS",
+            schoolurl: "https://www.eecs.mit.edu/",
+          },
+          {
+            name: "Zhengxuan Wu",
+            url: "https://zen-wu.social/",
+            exp: "research assistant, 2020-2021 → Ph.D. student at",
+            schoolname: "Stanford Computer Science",
+            schoolurl: "https://cs.stanford.edu/",
+          },
+          {
+            name: "Xuelin Yang",
+            url: "https://xyang23.github.io/",
+            exp: "research assistant, 2020-2021 → Ph.D. student at",
+            schoolname: "UC Berkeley Statistics",
+            schoolurl: "https://statistics.berkeley.edu/",
+          },
+          {
+            name: "Qingqing Zhao",
+            url: "https://cyanzhao42.github.io/",
+            exp: "2022, Ph.D. student collaborator @",
+            schoolname: "Stanford Electrical Engineering",
+            schoolurl: "https://ee.stanford.edu/",
+          },
+          {
+            name: "Pranay Reddy Samala",
+            url: "https://www.linkedin.com/in/pranayr/",
+            exp: "research assistant, 2021-2022 Spring → Software Engineer @",
+            schoolname: "Waymo",
+            schoolurl: "https://waymo.com/",
+          },
+          {
+            name: "Takashi Maruyama",
+            url: "https://sites.google.com/view/tmaruyama/home",
+            exp: "2022-2023, visiting scholar @",
+            schoolname: "NEC Laboratories Europe",
+            schoolurl: "https://www.neclab.eu/",
+          },
         ],
     }
 
 menuItems:
+  blogs: "博客文章"
   talks: "会议演讲"
   people: "团队成员"
   publications: "学术论文"
@@ -482,5 +490,5 @@ our_team_subtitle: "旅途即回报"
 
 mainpageContent:
   title: "实验室的目标是"
-  subtitles: ["攻坚克难", "开拓新领域"]
+  subtitles: ["攻坚克难", "开拓科学智能新领域"]
   quote: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color."

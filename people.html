@@ -9,6 +9,8 @@ gallary_pics:
     { path: "/assets/img/gallary/pic4.png", isFirst: false, index: 3 },
     { path: "/assets/img/gallary/pic5.png", isFirst: false, index: 4 },
     { path: "/assets/img/gallary/pic6.png", isFirst: false, index: 5 },
+    { path: "/assets/img/gallary/pic7.png", isFirst: false, index: 6 },
+    { path: "/assets/img/gallary/pic8.png", isFirst: false, index: 7 },
   ]
 ---
 
@@ -122,6 +124,23 @@ gallary_pics:
                   </div>
                   {% endfor %}
                 </div>
+                {% if groupCategory.label == "alumnus" %}
+                <div class="row">
+                  Selected from directly supervised students at Stanford:
+                  <ul>
+                    {% for stanfordStudent in groupCategory.stanfordStudents %}
+                    <li>
+                      <a href="{{stanfordStudent.url}}"
+                        >{{ stanfordStudent.name}}</a
+                      >, {{ stanfordStudent.exp}}
+                      <a href="{{stanfordStudent.schoolurl}}"
+                        >{{ stanfordStudent.schoolname}}</a
+                      >
+                    </li>
+                    {% endfor%}
+                  </ul>
+                </div>
+                {% endif %}
               </div>
             </div>
             {% endif %} {% endfor %}

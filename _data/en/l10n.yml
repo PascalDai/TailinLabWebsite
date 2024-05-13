@@ -23,6 +23,13 @@ menuPages:
       isFooter: true,
     }
   - {
+      name: "Blogs",
+      url: "/blogs",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
       name: "Talks",
       url: "/talks",
       isIndexHeader: true,
@@ -155,6 +162,11 @@ groupCategories:
               ],
             socialLinks:
               [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://zhangtao167.github.io",
+                },
+
                 {
                   icon: "fab fa-github",
                   link: "https://github.com/Zhangtao167",
@@ -303,6 +315,10 @@ groupCategories:
             socialLinks:
               [
                 {
+                  icon: "fa-solid fa-user",
+                  link: "https://peiyannn.github.io/",
+                },
+                {
                   icon: "far fa-envelope",
                   link: "hupeiyan18@mails.ucas.ac.cn",
                 },
@@ -388,6 +404,14 @@ groupCategories:
             name: "Qianru Zhang, HKU",
             pic: "qianruzhang.png",
             hasMemoji: true,
+            personal_page: "https://lizzyhku.github.io",
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://lizzyhku.github.io",
+                },
+              ],
           },
         ],
     }
@@ -398,91 +422,9 @@ groupCategories:
       members:
         [
           {
-            name: "Xianfeng Wu",
-            pic: "xianfengwu.png",
-            hasMemoji: true,
-            personal_page: "https://maradona10wxf.github.io/",
-            searchInterests:
-              ["3D Vision", "AI4Science", "Trustworthy Machine Learning"],
-            socialLinks:
-              [
-                {
-                  icon: "fa-solid fa-user",
-                  link: "https://maradona10wxf.github.io/",
-                },
-                {
-                  icon: "fab fa-github",
-                  link: "https://github.com/XianfengWu01",
-                },
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/xianfengwu10",
-                },
-                {
-                  icon: "far fa-envelope",
-                  link: "mailto:wxf20011228@gmail.com",
-                },
-              ],
-          },
-          {
-            name: "Zhuohao Ni",
-            pic: "zhuohaoni.png",
-            hasMemoji: true,
-            socialLinks:
-              [
-                { icon: "fab fa-github", link: "https://github.com/ZhuohaoNi" },
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/ppppnnnni",
-                },
-              ],
-          },
-          {
-            name: "Yu Wang",
-            pic: "yuwang.png",
-            hasMemoji: false,
-            searchInterests:
-              [
-                "Retrosynthesis Prediction",
-                "Protein-protein Interaction Design",
-                "Drug Discovery",
-              ],
-            socialLinks:
-              [{ icon: "fab fa-github", link: "https://github.com/wangyu-sd" }],
-          },
-          {
-            name: "Hongtao Zheng",
-            pic: "hongtaozheng.png",
-            hasMemoji: true,
-            searchInterests: ["PDE Solving", "Uncertainty Quantification"],
-            socialLinks:
-              [
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/zhenghongtao06",
-                },
-              ],
-          },
-          {
-            name: "Junjie Shan",
-            pic: "junjieshan.png",
-            hasMemoji: true,
-            socialLinks:
-              [
-                {
-                  icon: "fab fa-github",
-                  link: "https://github.com/JamerryShan",
-                },
-                {
-                  icon: "fab fa-twitter",
-                  link: "https://twitter.com/junjieshan_",
-                },
-              ],
-          },
-          {
-            name: "Rundong He",
+            name: "Rundong He, SDU",
             pic: "rundonghe.png",
-            hasMemoji: true,
+            hasMemoji: false,
             personal_page: "https://rundonghe.github.io",
             searchInterests:
               [
@@ -498,10 +440,69 @@ groupCategories:
                 },
               ],
           },
+          {
+            name: "Zhuohao Ni",
+            pic: "zhuohaoni.png",
+            hasMemoji: false,
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/ZhuohaoNi" },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/ppppnnnni",
+                },
+              ],
+          },
+        ],
+      stanfordStudents:
+        [
+          {
+            name: "Megan Tjandrasuwita",
+            url: "https://megantj.com/",
+            exp: "summer intern, 2021 → Ph.D. student at",
+            schoolname: "MIT EECS",
+            schoolurl: "https://www.eecs.mit.edu/",
+          },
+          {
+            name: "Zhengxuan Wu",
+            url: "https://zen-wu.social/",
+            exp: "research assistant, 2020-2021 → Ph.D. student at",
+            schoolname: "Stanford Computer Science",
+            schoolurl: "https://cs.stanford.edu/",
+          },
+          {
+            name: "Xuelin Yang",
+            url: "https://xyang23.github.io/",
+            exp: "research assistant, 2020-2021 → Ph.D. student at",
+            schoolname: "UC Berkeley Statistics",
+            schoolurl: "https://statistics.berkeley.edu/",
+          },
+          {
+            name: "Qingqing Zhao",
+            url: "https://cyanzhao42.github.io/",
+            exp: "2022, Ph.D. student collaborator @",
+            schoolname: "Stanford Electrical Engineering",
+            schoolurl: "https://ee.stanford.edu/",
+          },
+          {
+            name: "Pranay Reddy Samala",
+            url: "https://www.linkedin.com/in/pranayr/",
+            exp: "research assistant, 2021-2022 Spring → Software Engineer @",
+            schoolname: "Waymo",
+            schoolurl: "https://waymo.com/",
+          },
+          {
+            name: "Takashi Maruyama",
+            url: "https://sites.google.com/view/tmaruyama/home",
+            exp: "2022-2023, visiting scholar @",
+            schoolname: "NEC Laboratories Europe",
+            schoolurl: "https://www.neclab.eu/",
+          },
         ],
     }
 
 menuItems:
+  blogs: "Blogs"
   talks: "Talks"
   people: "People"
   publications: "Publications"
