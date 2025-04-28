@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<header>
+  <div
+    class="page-header min-vh-25 min-height-300"
+    style="
+      background-image: url('{{page.backgroundPic}}');
+    "
+    loading="lazy"
+  >
+    <span class="mask bg-gradient-dark"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-white text-center">
+          <h2 class="text-white">{{page.title}}</h2>
+          <p class="lead">{{page.subTitle}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+{{ content }}

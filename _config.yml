@@ -1,0 +1,117 @@
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# 添加图片优化插件
+plugins:
+  - jekyll-image-optim
+
+# 配置图片优化参数
+image_optim:
+  pngout: false
+  svgo: true
+  jpegoptim:
+    max_quality: 80
+
+
+SITE_NAME: "AI for Scientific Simulation and Discovery Lab"
+# footer和navbar 上用的路径
+menuPages:
+  - {
+      name: "Home",
+      url: "/",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Publications",
+      url: "/publications",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Talks",
+      url: "/talks",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "News",
+      url: "/news",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "People",
+      url: "/people",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Opening",
+      url: "/opening",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
+
+# footer 上展示的社交媒体
+socialLinks:
+  - { icon: "fa-github-alt", link: "https://github.com/AI4Science-WestlakeU" }
+  - { icon: "fa-x-twitter", link: "https://twitter.com/tailin_wu" }
+
+copyright: "Tailin Wu Lab"
+
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["assets/css", "assets/fonts", "assets/js"]
+parallel_localization: true
+#网站域名，每次发布到不同的网站前，需要先确认一下
+website: "http://10.1.10.115"
+
+# 添加生产环境域名
+url: "https://ai4s.lab.westlake.edu.cn"
+
+# 添加允许的预连接域名列表
+allowed_preconnect_domains:
+  - https://ai4s.lab.westlake.edu.cn
+
+# 确保排除不需要的文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - package.json
+  - package-lock.json
+
+# 添加 WebRick 配置
+webrick:
+  headers:
+    Connection: close
+
+# 在现有配置的基础上添加
+sass:
+  style: compressed
+  sourcemap: never
+
+# CSS 优化配置
+css_optimization:
+  critical_files:
+    - material-kit-pro.min.css
+  deferred_files:
+    - nucleo-icons.css
+    - nucleo-svg.css
+    - nativecode.css
+    - output.css

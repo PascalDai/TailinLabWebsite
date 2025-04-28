@@ -1,0 +1,27 @@
+[2023/03]AI + Science: motivation, advances and open problems, at Swarma (集智) 
+[2023/05]Graph Neural Networks for Large-scale Scientific Simulations, at 首届人工智能科学计算研讨会
+[2023/03]Steps toward an AI scientist: neuro-symbolic models for concept generalization and theory learning, at AAAI 2023 Symposium of Computational Approaches to Scientific Discovery 
+[2023/02]Learning structured representations for accelerating scientific discovery and simulation, at Yale Department of Statistics and Data Science
+[2022/06]Learning to Accelerate Large-scale Physical Simulations in Fluid and Plasma Physics, at the Data-driven Physical Simulations (DDPS) seminar at Lawrence Livermore National Laboratory 
+[2022/04]Guest lecture at Caltech CS159, AI Physicist and Machine Learning for Simulations 
+[2023/06]Machine learning of structured representations for accelerating scientific discovery and simulation, at Tsinghua University
+[2023/06]Learning structured representations for accelerating simulation and design, at School of Intelligence Science and Technology, Peking University
+[2023/05]Steps toward an AI scientist: neuro-symbolic models for concept generalization and theory learning, at Brown University Autonomous Empirical Research group.
+[2023/04]AI for scientific design: Surrogate model + backpropagation method, at Swarma 
+[2023/04]Learning Controllable Adaptive Simulation for Multi-resolution Physics, at Stanford Data for Sustainability Conference 2023 
+[2023/03]Learning Controllable Adaptive Simulation for Multi-resolution Physics, at TechBeat 
+[2023/02]Graph Neural Networks for Large-scale Simulations, at Stanford HAI Climate-Centred Student Affinity Group 
+[2023/02]ZeroC: A Neuro-Symbolic Model for Zero-shot Concept Recognition and Acquisition at Inference Time, at AI Time 
+[2022/12]Steps toward an AI scientist: neuro-symbolic models for zero-shot learning of concepts and theories, at BIGAI
+[2022/09]Learning to Accelerate Large-Scale Physical Simulations in Fluid and Plasma Physics, at SIAM 2022 Conference on Mathematics of Data Science
+[2022/06]Learning to accelerate simulation and inverse optimization of PDEs via latent global evolution, Stanford CS ML lunch
+[2021/12]Machine learning of physics theories, at Alan Turing Institute, Machine Learning and Dynamical Systems Seminar 
+[2021/10]Graph Information Bottleneck, at Beijing Academy of Artificial Intelligence (BAAI)
+[2021/06]Machine learning of physics theories and its universal tradeoff between accuracy and simplicity, at Workshop on Artificial Scientific Discovery 2021 
+[2021/04]Machine Learning of Physics Theories, at Workshop on Artificial Scientific Discovery 2021, Summer school hosted by Max Planck Institute for the Science of Light 
+[2021/04]Phase transitions on the tradeoff between prediction and compression in machine learning, Stanford CS ML lunch
+[2021/03]Learning to accelerate the simulation of PDEs, at CLARIPHY Topical Meetings 
+[2021/02]Machine Learning of Physics Theories, at Seminar Series of SJTU Institute of Science 
+[2021/02]Phase transitions on the universal tradeoff between prediction and compression in machine learning, at Math Machine Learning seminar MPI MIS + UCLA 
+[2020/10]Machine learning of physics theories and its universal tradeoff between accuracy and simplicity, at Los Alamos National Lab
+[2020/02]Phase transitions for the information bottleneck, UIUC

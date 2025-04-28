@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Talks"
+subTitle: ""
+backgroundPic: "/assets/img/talksbg.jpg"
+permalink: /talks/
+---
+
+<section class="py-8">
+  <div class="container">
+    <div class="row justify-space-between py-2">
+      {% assign sorted_posts = site.categories.talks %} {% for post in
+      sorted_posts %}
+      <div class="card card-plain card-blog">
+        <div class="row">
+          <div class="col-md-auto my-auto ms-md-3 mt-md-auto mb-4">
+            {{post.content}}
+          </div>
+        </div>
+      </div>
+      {{index}} {{sp_size-1}} {% unless forloop.last %}
+      <hr class="dark horizontal my-0" />
+      {% endunless %} {% endfor %}
+    </div>
+  </div>
+</section>

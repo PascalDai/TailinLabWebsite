@@ -1,0 +1,39 @@
+---
+layout: page
+title: "Opening"
+subTitle: ""
+permalink: /opening/
+backgroundPic: "/assets/img/openingbg.jpg"
+---
+
+<section class="py-8">
+  <div class="container">
+    <div class="row justify-space-between py-2">
+      {% for post in site.categories.opening %} {% if post.lang ==
+      site.active_lang %}
+      <div class="card card-plain card-blog mt-5">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- <div class="card-image position-relative border-radius-lg cursor-pointer">
+                <div class="blur-shadow-image">
+                  <img class="img border-radius-lg" src="../../assets/img/examples/card-blog4.jpg">
+                </div>
+              </div> -->
+          </div>
+          <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+            <!-- <p class="text-xs text-uppercase font-weight-bold text-gradient text-info mb-2">{{post.title}}</p> -->
+            <a href="{{post.url}}">
+              <h3 class="text-dark cursor-pointer">{{post.title}}</h3>
+            </a>
+            <p>
+              {{post.subTitle}}<a href="{{post.url}}" class="text-dark">
+                Read More
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</section>

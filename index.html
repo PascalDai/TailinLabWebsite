@@ -1,0 +1,429 @@
+---
+title: Tailin Wu Lab
+lang: en
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="page-headers-sections">
+    <!-- -------- START HEADER 2 w/ waves and typed text ------- -->
+    <header class="position-relative">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none"
+      >
+        <div class="container justify-content-between">
+          <img
+            class="avatar avatar-md m-1 mt-n1"
+            src="/assets/img/logo_noword.png"
+            alt="logo"
+          /><a class="navbar-brand col" href="/">
+            <h6 class="text-white text-start" style="white-space: normal">
+              {{site.data.l10n.title}}
+            </h6></a
+          >
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+                Index
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                {% for menuPage in site.data.l10n.menuPages %} {% if
+                menuPage.isIndexHeader %}
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="{{menuPage.url}}">
+                    {{ menuPage.name}}
+                  </a>
+                </li>
+                {% endif %} {% endfor %}
+              </ul>
+              <ul class="navbar-nav mx-auto">
+                {% for socialLink in site.socialLinks %}
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="{{ socialLink.link}}">
+                    <i class="fa-brands {{socialLink.icon}}"></i>
+                  </a>
+                </li>
+                {% endfor %}
+                <li>
+                  {% if site.active_lang == site.default_lang %}
+                  <a
+                    class="nav-link text-white nav-item"
+                    href="/zh{{page.url}}"
+                  >
+                    <i class="fa-solid fa-language"></i>
+                  </a>
+                  {% else %}
+                  <a class="nav-link text-white" href=" {{page.url}}">
+                    <i class="fa-solid fa-language"></i>
+                  </a>
+                  {% endif %}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="page-header min-vh-50"
+        style="background-image: url(assets/img/indexbg.jpg)"
+        loading="lazy"
+      >
+        <span class="mask bg-gradient-info opacity-4"></span>
+        <div class="container" style="z-index: 0">
+          <div class="row">
+            <div class="col-lg-8 text-center mx-auto">
+              <h1 class="text-white">
+                {{ site.data.l10n.mainpageContent.title}}
+                <span class="text-white" id="typed"></span>
+              </h1>
+              <div id="typed-strings">
+                {% for subtitle in site.data.l10n.mainpageContent.subtitles %}
+                <h1>{{subtitle}}</h1>
+                {% endfor %}
+                <!-- <h1>solve important AI + Science problems</h1>
+                <h1>open new frontiers</h1> -->
+              </div>
+              <p class="lead text-white text-center pe-5 mt-4">
+                <!-- The time is now for it to be okay to be great. People in this
+                world shun people for being great. For being a bright color. -->
+                <!-- {{ site.data.l10n.mainpageContent.quote}} -->
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- -------- END HEADER 2 w/ waves and typed text ------- -->
+    <!-- -------- START SECTION 3 w/ waves and typed text ------- -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <div class="row flex-row-reverse">
+              <div class="col-lg-6 justify-content-center d-flex flex-column">
+                <div class="card border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img
+                      src="/assets/img/figures.png"
+                      alt="img-blur-shadow-blog-2"
+                      class="img-fluid border-radius-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3"
+              >
+                <h3>
+                  <a href="" class="text-dark"
+                    >Our lab's research solves the core and universal problems
+                    at the intersection of AI (deep learning) and scientific
+                    disciplines, including:</a
+                  >
+                </h3>
+                <p>
+                  <strong>(1) Generative AI for scientific simulation, control, and
+                    design:</strong>
+                  Develop generative AI methods based on diffusion models, flow
+                  matching, and next-generation generative models for the
+                  simulation, control, and design of large-scale scientific
+                  systems. Applications include critical fields such as fluid
+                  dynamics, energy systems, mechanical engineering, and life
+                  sciences.
+                </p>
+                <p>
+                  <strong>(2) AI Agents for scientific discovery:</strong>
+                  Create machine learning approaches integrating AI agents,
+                  representation learning, and foundation models to build
+                  general-purpose AI scientists. These systems will enable
+                  intelligent automation of scientific experiments and generate
+                  new scientific discoveries, with applications in life sciences
+                  and physics.
+                </p>
+                <p>
+                  <strong>(3) Representation learning</strong> with graph neural
+                  networks, generative models, and information theory, motivated
+                  by scientific applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Newest Pubilication -->
+          {% assign newestPublications = site.categories.publications | limit: 3
+          %} {% assign newestPublication = newestPublications | first %}
+          <div class="col-lg-12 mt-5">
+            <div class="row flex-row-reverse">
+              <div class="col-lg-6 justify-content-center d-flex flex-column">
+                <div class="card border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img
+                      src="{{ newestPublication.image}}"
+                      alt="img-blur-shadow-blog-2"
+                      class="img-fluid border-radius-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3"
+              >
+                <h6 class="category text-info mt-3">
+                  <a href="/publications" style="color: #1a73e8"
+                    >Publications</a
+                  >
+                </h6>
+                <h3>
+                  <a href="" class="text-dark">{{ newestPublication.title }}</a>
+                </h3>
+                <p>
+                  {{newestPublication.summary}}<a
+                    href="/publications"
+                    class="text-darker icon-move-right text-sm"
+                    >Read More
+                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Talks  -->
+          {% assign talks = site.categories.talks %}
+          <div class="col-lg-12 mx-auto pt-7">
+            <a href="/talks"
+              ><h2>{{ site.data.l10n.menuItems.invited_talks}}</h2></a
+            >
+            <div class="accordion" id="accordionRental">
+              <div class="accordion-item mb-3">
+                <h5 class="accordion-header" id="headingLatest">
+                  <button
+                    class="accordion-button border-bottom font-weight-bold text-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseLatest"
+                    aria-expanded="true"
+                    aria-controls="collapseLatest"
+                  >
+                    {{site.data.l10n.menuItems.latest_talks}}
+                    <i
+                      class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                    <i
+                      class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                  </button>
+                </h5>
+                <div
+                  id="collapseLatest"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingLatest"
+                  data-bs-parent="#accordionRental"
+                >
+                  <br class="accordion-body text-sm opacity-8" />
+                  <div class="row">
+                    {% for talk in site.categories.talks limit: 3 %}
+                    <div class="col-sm-6 col-lg-4 mt-lg-0 mt-4">
+                      <p class="text-sm">{{ talk.content}}</p>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                </div>
+                <div class="accordion-item mb-3">
+                <h5 class="accordion-header" id="headingFeatured">
+                  <button class="accordion-button border-bottom font-weight-bold text-start" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFeatured" aria-expanded="true" aria-controls="collapseFeatured">
+                    {{site.data.l10n.menuItems.featured_talks}}
+                    <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"></i>
+                    <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"></i>
+                  </button>
+                </h5>
+                <div id="collapseFeatured" class="accordion-collapse collapse show" aria-labelledby="headingFeatured"
+                  data-bs-parent="#accordionRental">
+                  <br class="accordion-body text-sm opacity-8" />
+                  <div class="row">
+                    {% for talk in site.tags["featured talks"] limit: 3 %}
+                    <div class="col-sm-6 col-lg-4 mt-lg-0 mt-4">
+                      <p class="text-sm">{{ talk.content}}</p>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-3">
+                <h5 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button border-bottom font-weight-bold text-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    {{site.data.l10n.menuItems.other_talks}}
+                    <i
+                      class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                    <i
+                      class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                    ></i>
+                  </button>
+                </h5>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionRental"
+                >
+                  <div class="accordion-body text-sm opacity-8">
+                    <div class="row">
+                      {% for talk in site.tags["other talks"] %}
+                      <div class="col-sm-6 col-lg-4 mt-lg-1 mt-4">
+                        <p class="text-sm">{{ talk.content}}</p>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- News Carousel -->
+          <section class="pt-7 position-relative">
+            <a href="/news"><h2>{{site.data.l10n.menuItems.news}}</h2></a>
+            <div
+              id="carousel-testimonials"
+              class="carousel slide carousel-team"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                {% assign sorted_posts = site.categories.news | sort: "date" %}
+                {% for post in sorted_posts %}
+                <div
+                  class="carousel-item {% if forloop.last %}active {% endif %}"
+                >
+                  <div class="row align-items-center">
+                    <div class="col-md-12 me-lg-auto position-relative">
+                      <h1
+                        class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom"
+                      >
+                        {{post.content}}
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+
+          <!-- Group Member -->
+          <div class="row pt-7">
+            <div class="col-lg-10">
+              <a href="/people"
+                ><h2>{{ site.data.l10n.menuItems.about_our_team}}</h2></a
+              >
+              <p>{{ site.data.l10n.our_team_subtitle }}</p>
+              <div class="col-12">
+                {% for groupCategory in site.data.l10n.groupCategories %} {% if
+                groupCategory.members %} {% for member in groupCategory.members
+                %}{% if member.hasMemoji %}
+                <a
+                  href="/people#{{groupCategory.label}}"
+                  class="avatar avatar-lg"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="{{ member.name }}"
+                >
+                  <img
+                    alt="{{groupCategory.label}}"
+                    src="../../assets/img/memoji/{{member.pic}}"
+                  />
+                </a>
+                {% endif %} {% endfor %} {% endif %} {% endfor %}
+              </div>
+            </div>
+            <div
+              class="col-lg-2 text-end d-flex flex-column justify-content-center"
+            >
+              <!-- <button type="button" class="btn bg-gradient-info mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2">Join Team</button> -->
+              <a
+                href="/opening"
+                class="btn bg-gradient-success mb-0 ms-lg-auto me-lg-0 me-auto mt-lg-0 mt-2"
+                >{{site.data.l10n.menuItems.join_us}}</a
+              >
+            </div>
+          </div>
+          <div class="card pt-3 pe-lg-7 ps-lg-7" style="box-shadow: none">
+            <a href="/people#gallary">
+              <img src="/assets/img/gallary/pic12.png" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------- END SECTION 3 w/ waves and typed text ------- -->
+
+    <!-- -------- START FOOTER 5 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+    {% include footer.html %}
+    <!-- -------- END FOOTER 5 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+    <!--   Core JS Files   -->
+    {% include jsfile.html %}
+    <script>
+      if (document.getElementById("typed")) {
+        var typed = new Typed("#typed", {
+          stringsElement: "#typed-strings",
+          typeSpeed: 70,
+          backSpeed: 50,
+          backDelay: 200,
+          startDelay: 500,
+          loop: true,
+        });
+      }
+    </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <script>
+      var myCarousel = document.querySelector("#carousel-testimonials");
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // 1 seconds
+      });
+    </script>
+  </body>
+</html>

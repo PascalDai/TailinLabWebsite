@@ -1,0 +1,16 @@
+critical_css:
+  - file: material-kit-pro.min.css
+    priority: high
+  - file: nucleo-icons.css
+    priority: medium
+  - file: nucleo-svg.css
+    priority: medium
+  - file: nativecode.css
+    priority: low
+  - file: output.css
+    priority: low
+
+# 排除 map 文件
+exclude_files:
+  - material-kit-pro.css.map
+  - output.css.map
