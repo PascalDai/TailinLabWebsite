@@ -1,0 +1,160 @@
+<head>
+  <!-- 1. 关键 CSS 内联 -->
+  <style>
+    /* 首屏关键样式 */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+  
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: #fff;
+      padding: 1rem;
+    }
+  
+    .main-content {
+      padding-top: 70px;
+    }
+  
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  </style>
+  
+  <!-- 2. 预加载主要 CSS -->
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/material-kit-pro.min.css" as="style">
+  
+  <!-- 3. 异步加载主要 CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/material-kit-pro.min.css" media="print"
+    onload="this.media='all'">
+  
+  <!-- 4. 延迟加载其他 CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nucleo-icons.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nucleo-svg.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nativecode.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/output.css" media="print" onload="this.media='all'">
+  
+  <!-- 5. CSS 加载失败的备用方案 -->
+  <noscript>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/material-kit-pro.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nucleo-svg.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nativecode.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/output.css">
+  </noscript>
+  
+  <!-- 6. CSS 加载优化脚本 -->
+  <script>
+    // 检测 CSS 加载完成
+    var cssMain = document.querySelector('link[href*="material-kit-pro.min.css"]');
+    if (cssMain) {
+      cssMain.addEventListener('load', function () {
+        document.documentElement.classList.add('css-loaded');
+      });
+    }
+  </script>
+  <!-- 原有的其他 head 内容 -->
+  <!-- 在现有 head 标签内的最前面添加 -->
+  {% if jekyll.environment == "production" %}
+  <!-- 生产环境 -->
+  <link rel="preconnect" href="https://ai4s.lab.westlake.edu.cn">
+  <link rel="dns-prefetch" href="https://ai4s.lab.westlake.edu.cn">
+  {% else %}
+  <!-- 开发环境 -->
+  <link rel="preconnect" href="http://127.0.0.1:4000">
+  <link rel="dns-prefetch" href="http://127.0.0.1:4000">
+  {% endif %}
+  
+  <!-- 如果网站用到了以下资源,建议也添加预连接 -->
+  {% if page.use_math %}
+  <!-- LaTeX 数学公式支持 -->
+  <link rel="preconnect" href="https://cdn.mathjax.org">
+  {% endif %}
+  
+  <!-- 如果使用了 Google Analytics -->
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  
+  <!-- 原有的其他 head 内容 -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="/assets/img/apple-icon.png"
+  />
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <title>{{site.SITE_NAME}} | {{ page.title}}</title>
+  <!--     Fonts and icons     -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+  />
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <!-- <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> -->
+  <script
+    src="https://kit.fontawesome.com/7665ecc650.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Material Icons -->
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet"
+  />
+  <!-- CSS Files -->
+  <!-- <link
+    id="pagestyle"
+    href="/assets/css/material-kit-pro.css?v=3.0.4"
+    rel="stylesheet"
+  /> -->
+  <link id="pagestyle" href="/assets/css/output.css" rel="stylesheet" />
+  <link id="codestyle" href="/assets/css/nativecode.css" rel="stylesheet" />
+  <!-- 让markdown适配公式 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
+    integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j"
+    crossorigin="anonymous"
+  />
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"
+    integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js"
+    integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+    crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"
+  ></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>

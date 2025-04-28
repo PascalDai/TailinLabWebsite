@@ -1,0 +1,232 @@
+---
+permalink: /people/
+title: People
+gallary_pics:
+  [
+    { path: "/assets/img/gallary/pic14.png", isFirst: true, index: 0 },
+    { path: "/assets/img/gallary/pic12.png", isFirst: false, index: 1 },
+    { path: "/assets/img/gallary/pic13.png", isFirst: false, index: 2 },
+    { path: "/assets/img/gallary/pic1.png", isFirst: false, index: 3 },
+    { path: "/assets/img/gallary/pic2.png", isFirst: false, index: 4 },
+    { path: "/assets/img/gallary/pic3.png", isFirst: false, index: 5 },
+    { path: "/assets/img/gallary/pic4.png", isFirst: false, index: 6 },
+    { path: "/assets/img/gallary/pic5.png", isFirst: false, index: 7 },
+    { path: "/assets/img/gallary/pic6.png", isFirst: false, index: 8 },
+    { path: "/assets/img/gallary/pic7.png", isFirst: false, index: 9 },
+    { path: "/assets/img/gallary/pic8.png", isFirst: false, index: 10 },
+    { path: "/assets/img/gallary/pic9.png", isFirst: false, index: 11 },
+    { path: "/assets/img/gallary/pic10.png", isFirst: false, index: 12 },
+    { path: "/assets/img/gallary/pic11.png", isFirst: false, index: 13 }
+  ]
+---
+
+<!--
+=========================================================
+* Material Kit 2 PRO - v3.0.4
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit-pro 
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+  {% include head.html%}
+
+  <body class="terms">
+    <!-- Navbar -->
+    {% include navbar.html %}
+    <section class="pt-3 pt-md-5 pb-md-5 pt-lg-8 bg-gray-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-lg-0 mb-5 mt-lg-0">
+            <ul
+              class="nav flex-column bg-white border-radius-lg p-3 position-sticky top-10 shadow-lg"
+            >
+              {% for groupCategory in site.data.l10n.groupCategories %} {% if
+              groupCategory.members %}
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark d-flex align-items-center"
+                  data-scroll
+                  href="#{{groupCategory.label}}"
+                >
+                  <i class="material-icons text-dark opacity-5 pe-2"
+                    >{{ groupCategory.icon }}</i
+                  >
+                  {{ groupCategory.category }}
+                </a>
+              </li>
+              {% endif %} {% endfor %}
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark d-flex align-items-center"
+                  data-scroll
+                  href="#gallary"
+                >
+                  <i class="material-icons text-dark opacity-5 pe-2">image</i>
+                  {{ site.data.l10n.menuItems.gallary }}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            {% for groupCategory in site.data.l10n.groupCategories %} {% if
+            groupCategory.members %}
+            <div class="card shadow-lg mb-5">
+              <div
+                class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent"
+              >
+                <div class="bg-gradient-info shadow-info border-radius-lg p-3">
+                  <h3 class="text-white mb-0" id="{{ groupCategory.label }}">
+                    {{ groupCategory.category}}
+                  </h3>
+                </div>
+              </div>
+
+              <div class="card-body p-5">
+                <div class="row">
+                  {% for member in groupCategory.members %}
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                      <div class="card-header p-0 position-relative">
+                        <a
+                          class="d-block blur-shadow-image"
+                          href="{{member.personal_page}}"
+                        >
+                          <img
+                            src="../../assets/img/pic/{{member.pic}}"
+                            alt="img-blur-shadow"
+                            class="img-fluid shadow border-radius-lg"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="card-body px-0">
+                        <h5>
+                          <a
+                            href="{{member.personal_page}}"
+                            class="text-dark font-weight-bold"
+                            >{{member.name}}</a
+                          >
+                        </h5>
+                        {% if member.searchInterests %} {% for searchInterest in
+                        member.searchInterests %}
+                        <p class="text-sm mb-0">{{searchInterest}}</p>
+                        {% endfor %} {% endif %} {% if member.socialLinks %} {%
+                        for socialLink in member.socialLinks %}
+                        <a
+                          href="{{ socialLink.link}}"
+                          class="btn btn-simple px-2 mb-0"
+                        >
+                          <i class="{{socialLink.icon}} text-lg"></i>
+                        </a>
+                        {% endfor %} {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+                {% if groupCategory.label == "alumnus" %}
+                <div class="row">
+                  Selected from directly supervised students at Stanford:
+                  <ul>
+                    {% for stanfordStudent in groupCategory.stanfordStudents %}
+                    <li>
+                      <a href="{{stanfordStudent.url}}"
+                        >{{ stanfordStudent.name}}</a
+                      >, {{ stanfordStudent.exp}}
+                      <a href="{{stanfordStudent.schoolurl}}"
+                        >{{ stanfordStudent.schoolname}}</a
+                      >
+                    </li>
+                    {% endfor%}
+                  </ul>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %} {% endfor %}
+            <div class="card shadow-lg mb-5">
+              <div
+                class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent"
+              >
+                <div class="bg-gradient-info shadow-info border-radius-lg p-3">
+                  <h3 class="text-white mb-0" id="gallary">
+                    {{ site.data.l10n.menuItems.gallary }}
+                  </h3>
+                </div>
+              </div>
+              <div class="card-body p-5">
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <div
+                      id="carouselExampleIndicators"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <ol class="carousel-indicators">
+                        {% for pic in page.gallary_pics %}
+                        <li
+                          data-target="#carouselExampleIndicators"
+                          data-bs-slide-to="{{ pic.index }}"
+                          {%
+                          if
+                          pic.isFirst
+                          %}
+                          class="active"
+                          {%
+                          endif%}
+                        ></li>
+                        {% endfor %}
+                      </ol>
+                      <div class="carousel-inner">
+                        {% for pic in page.gallary_pics %}
+                        <div
+                          class="carousel-item {% if pic.isFirst %}active{% endif %}"
+                        >
+                          <img class="d-block w-100" src="{{ pic.path }}" />
+                        </div>
+                        {% endfor %}
+                      </div>
+                      <a
+                        class="carousel-control-prev"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include footer.html %}
+    <!--   Core JS Files   -->
+    {% include jsfile.html %}
+  </body>
+</html>

@@ -1,0 +1,67 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+  {% include head.html %}
+
+  <body class="blog-single-article bg-gray-200">
+    <!-- Navbar Light -->
+    {% include navbar.html %}
+    <!-- End Navbar -->
+    <!-- -------- START HEADER 8 w/ card over right bg image ------- -->
+    <header>
+      <div
+        class="page-header min-vh-85"
+        style="background-image: url('{% if page.image%}{{page.image}}{% else %}/assets/img/bg5.jpg{% endif%}'); background-size:cover;"
+        loading="lazy"
+      >
+        <span class="mask bg-gradient-dark opacity-8"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 d-flex justify-content-center flex-column">
+              <h1 class="text-white mb-0">{{ page.title }}</h1>
+              <p class="lead pe-sm-5 me-sm-5 text-white opacity-8">
+                {{ page.subTitle }}
+              </p>
+              <h5 class="mt-3 text-white">{{ page.date | date:"%Y-%m-%d" }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- -------- END HEADER 8 w/ card over right bg image ------- -->
+    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+      <!-- START Blogs w/ 3 images & quote & text -->
+      <section class="py-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 ms-auto me-auto">
+              {% for category in page.categories%}<span
+                class="badge bg-dark me-2"
+              >
+                {{ category }}</span
+              >{% endfor %} {{ content }}
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Blogs w/ 3 images & quote & text -->
+      <!-- -------- START Features w/ 4 cols w/ colored icon & title & text -------- -->
+      <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+
+      <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
+    </div>
+    {% include footer.html %} {% include jsfile.html %}
+    <script>
+      if (document.getElementsByClassName("page-header")) {
+        window.onscroll = debounce(function () {
+          var scrollPosition = window.pageYOffset;
+          var bgParallax = document.querySelector(".page-header");
+          var oVal = window.scrollY / 3;
+          bgParallax.style.transform = "translate3d(0," + oVal + "px,0)";
+        }, 6);
+      }
+    </script>
+  </body>
+</html>

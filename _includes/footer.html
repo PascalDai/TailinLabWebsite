@@ -1,0 +1,47 @@
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mb-4 mx-auto text-center">
+        {% for menuPage in site.data.l10n.menuPages %}
+        <a
+          href="{{menuPage.url}}"
+          target="_blank"
+          class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+        >
+          {{menuPage.name}}
+        </a>
+        {% endfor %}
+      </div>
+      <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
+        {% for socialLink in site.socialLinks %}
+        <a
+          href="{{ socialLink.link }}"
+          target="_blank"
+          class="text-secondary me-xl-4 me-4"
+        >
+          <span class="text-lg fab {{socialLink.icon}}"></span>
+        </a>
+        {% endfor%} {% if site.active_lang == site.default_lang %}
+        <a class="text-secondary me-xl-4 me-4" href="/zh{{page.url}}">
+          <span class="fa-solid fa-language"></span>
+        </a>
+        {% else %}
+        <a class="text-secondary me-xl-4 me-4" href=" {{page.url}}">
+          <span class="fa-solid fa-language"></span>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 mx-auto text-center mt-1">
+        <p class="mb-0 text-secondary">
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by {{ site.copyright }}
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

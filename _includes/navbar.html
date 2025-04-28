@@ -1,0 +1,236 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+  <div class="container">
+    <img
+      class="avatar avatar-md m-1"
+      src="/assets/img/logo_noword.png"
+      alt="logo"
+    />
+    <a
+      class="navbar-brand font-weight-bold d-none d-md-block"
+      href="/"
+      rel="tooltip"
+      data-placement="bottom"
+      target="_blank"
+      style="white-space: normal"
+    >
+      {{site.data.l10n.title}}
+    </a>
+    <a
+      class="navbar-brand font-weight-bold d-block d-md-none col"
+      href="/"
+      rel="tooltip"
+      data-placement="bottom"
+      target="_blank"
+      style="white-space: normal"
+    >
+      {{site.data.l10n.title}}
+    </a>
+    <a
+      href="/opening"
+      class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
+      >{{ site.data.l10n.menuItems.join_us }}</a
+    >
+    <button
+      class="navbar-toggler shadow-none ms-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navigation"
+      aria-controls="navigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon mt-2">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </span>
+    </button>
+    <div
+      class="collapse navbar-collapse w-lg-80 pt-3 pb-2 py-lg-0"
+      id="navigation"
+    >
+      <ul class="navbar-nav navbar-nav-hover ms-auto">
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            id="dropdownMenuPeople"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            role="button"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">diversity_2</i>
+            {{ site.data.l10n.menuItems.people}}
+            <img
+              src="/assets/img/down-arrow-dark.svg"
+              alt="down-arrow"
+              class="arrow ms-auto ms-md-2"
+            />
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
+            aria-labelledby="dropdownMenuPeople"
+          >
+            <div class="d-none d-lg-block">
+              <ul class="list-group">
+                {% for groupCategory in site.data.l10n.groupCategories %} {% if
+                groupCategory.members %}
+                <li class="nav-item list-group-item border-0 p-0">
+                  <a
+                    class="dropdown-item py-2 ps-3 border-radius-md"
+                    href="/people#{{groupCategory.label}}"
+                  >
+                    <h6
+                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                    >
+                      {{groupCategory.category}}
+                    </h6>
+                    {% if groupCategory.members.size > 1 %}
+                    <span class="text-sm"
+                      >See all {{ groupCategory.members | size }} members</span
+                    >
+                    {% endif %}
+                  </a>
+                </li>
+                {% endif %} {% endfor %}
+              </ul>
+            </div>
+            <div class="row d-lg-none">
+              <div class="col-md-12 g-0">
+                {% for groupCategory in site.data.l10n.groupCategories %} {% if
+                groupCategory.members %}
+                <a
+                  class="dropdown-item py-2 ps-3 border-radius-md"
+                  href="/people#{{groupCategory.label}}"
+                >
+                  <h6
+                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                  >
+                    {{groupCategory.category}}
+                  </h6>
+                  {% if groupCategory.members.size > 1 %}
+                  <span class="text-sm"
+                    >See all {{ groupCategory.members | size }} members</span
+                  >
+                  {% endif %}
+                </a>
+                {% endif %} {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            href="/publications"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">mode_comment</i>
+            {{ site.data.l10n.menuItems.publications }}
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            href="/blogs"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">menu_book</i>
+            {{ site.data.l10n.menuItems.blogs }}
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            href="/talks"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">psychology_alt</i>
+            {{ site.data.l10n.menuItems.talks }}
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            href="/news"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">newspaper</i>
+            {{ site.data.l10n.menuItems.news }}
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            href="/course/frontiers-2025/"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">book</i>
+            {{ site.data.l10n.menuItems.course }}
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a
+            class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+            id="dropdownMenuDocs"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            role="button"
+          >
+            <i class="material-icons opacity-6 me-2 text-md">meeting_room</i>
+            {{ site.data.l10n.menuItems.opening }}
+            <img
+              src="/assets/img/down-arrow-dark.svg"
+              alt="down-arrow"
+              class="arrow ms-auto ms-md-2"
+            />
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
+            aria-labelledby="dropdownMenuDocs"
+          >
+            <div class="d-none d-lg-block">
+              <ul class="list-group">
+                {% for opening in site.categories.opening %} {% if opening.lang
+                ==site.active_lang %}
+                <li class="nav-item list-group-item border-0 p-0">
+                  <a
+                    class="dropdown-item py-2 ps-3 border-radius-md"
+                    href="{{opening.url}}"
+                  >
+                    <h6
+                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                    >
+                      {{opening.title}}
+                    </h6>
+                    <span class="text-sm">{{opening.subTitle}}</span>
+                  </a>
+                </li>
+                {% endif %} {% endfor %}
+              </ul>
+            </div>
+            <div class="row d-lg-none">
+              <div class="col-md-12 g-0">
+                {% for opening in site.categories.opening %} {% if opening.lang
+                ==site.active_lang %}
+                <a
+                  class="dropdown-item py-2 ps-3 border-radius-md"
+                  href="{{opening.url}}"
+                >
+                  <h6
+                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                  >
+                    {{opening.title}}
+                  </h6>
+                  <span class="text-sm">{{opening.subTitle}}</span>
+                </a>
+                {% endif %} {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav d-lg-block d-none">
+        <li class="nav-item">
+          <a href="/opening" class="btn btn-sm bg-gradient-success mb-0 me-1"
+            >{{site.data.l10n.menuItems.join_us}}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

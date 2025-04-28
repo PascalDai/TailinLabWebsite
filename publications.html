@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Publications"
+subTitle: ""
+permalink: /publications/
+backgroundPic: "/assets/img/publicationsbg.jpg"
+---
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- highlight publication -->
+        {% assign highlightPublication = site.categories.publications | first %}
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
+            >
+            {% if highlightPublication.image %}
+              <div class="card">
+                <div class="d-block blur-shadow-image">
+                  <img
+                    src="{{ highlightPublication.image }}"
+                    alt="img-blur-shadow-blog-2"
+                    class="img-fluid border-radius-lg"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            {% endif %}
+            </div>
+            <div
+              class="col-lg-6 justify-content-center d-flex flex-column pl-lg-5 pt-lg-0 pt-3"
+            >
+              <h6
+                class="category text-warning mt-3 text-uppercase font-weight-bold"
+              >
+                {{ highlightPublication.tag}}
+              </h6>
+              <h3 class="card-title">
+                <a href="{{ highlightPublication.url }}" class="text-dark"
+                  >{{ highlightPublication.title}}</a
+                >
+              </h3>
+
+              <p class="card-description">{{highlightPublication.content}}</p>
+              <div class="col-12">
+                {% for link in highlightPublication.links %}
+                <span class="badge bg-info"
+                  ><a href="{{link.url}}">{{link.name}}</a></span
+                >
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- other publications -->
+        {% assign otherpublications = site.categories.publications |
+        slice:1,site.categories.publications.size %} {% for publication in
+        otherpublications %}
+        <div class="card card-plain card-blog mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              {% if publication.image %}
+              <div
+                class="card-image position-relative border-radius-lg cursor-pointer"
+              >
+                <div class="blur-shadow-image">
+                  <img
+                    class="img border-radius-lg"
+                    src="{{ publication.image}}"
+                  />
+                </div>
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+              <p
+                class="text-xs text-uppercase font-weight-bold text-gradient text-warning mb-2"
+              >
+                {{publication.tag}}
+              </p>
+              <h3 class="text-dark cursor-pointer">{{publication.title}}</h3>
+              <p>{{publication.content}}</p>
+              <div class="col-12">
+                {% for link in publication.links %}
+                <span class="badge bg-info"
+                  ><a href="{{link.url}}">{{link.name}}</a></span
+                >
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

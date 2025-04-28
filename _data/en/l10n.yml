@@ -1,0 +1,675 @@
+title: "AI for Scientific Simulation and Discovery Lab"
+
+menuPages:
+  - {
+      name: "Home",
+      url: "/",
+      isIndexHeader: false,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "People",
+      url: "/people",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Publications",
+      url: "/publications",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Blogs",
+      url: "/blogs",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Talks",
+      url: "/talks",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "News",
+      url: "/news",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Course",
+      url: "/course/frontiers-2025/",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+  - {
+      name: "Opening",
+      url: "/opening",
+      isIndexHeader: true,
+      isNavbar: true,
+      isFooter: true,
+    }
+
+groupCategories:
+  - {
+      icon: "flight",
+      category: "Principal Investigator",
+      label: "principal-investigator",
+      members:
+        [
+          {
+            name: "Tailin Wu",
+            pic: "tailinwu.png",
+            hasMemoji: true,
+            personal_page: "https://tailin.org",
+            searchInterests:
+              [
+                "AI for scientific simulation",
+                "AI for scientific control and design",
+                "AI for scientific discovery",
+              ],
+            socialLinks:
+              [
+                { icon: "fa-solid fa-user", link: "https://tailin.org" },
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/tailintalent",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/tailin_wu",
+                },
+                {
+                  icon: "fab fa-google",
+                  link: "https://scholar.google.com/citations?hl=en&user=axv_UT0AAAAJ&view_op=list_works&sortby=pubdate",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:wutailin@westlake.edu.cn",
+                },
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "airplane_ticket",
+      category: "Postdocs",
+      label: "postdocs",
+      members:
+        [
+          {
+            name: "Long Wei",
+            pic: "longwei.png",
+            hasMemoji: true,
+            personal_page: "https://longweizju.github.io/",
+            searchInterests: ["Machine Learning", "AI for Science"],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://longweizju.github.io/",
+                },
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/LongWeiZJU",
+                },
+              ],
+          },
+          {
+            name: "Qianyi Chen",
+            pic: "qianyichen.png",
+            hasMemoji: true,
+            personal_page: "https://chen458438184.wixsite.com/biography",
+            searchInterests:
+              [
+                "Data-driven Physical Simulation",
+                "Physics-informed Machine Learning",
+              ],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://chen458438184.wixsite.com/biography",
+                },
+              ],
+          },
+          {
+            name: "Zhuo Xu",
+            pic: "zhuoxu.png",
+            hasMemoji: false,
+            searchInterests: ["Statistics", "AI for Biology", "AI-Agents"],
+          }
+        ],
+    }
+  - {
+      icon: "flight_class",
+      category: "PhD Students",
+      label: "phd-students",
+      members:
+        [
+          {
+            name: "Tao Zhang",
+            pic: "taozhang.png",
+            hasMemoji: true,
+            searchInterests:
+              ["Control Theory", "Machine Learning", "Inverse Design"],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://zhangtao167.github.io",
+                },
+
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/Zhangtao167",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/tozhng979237695",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:zhangtao@westlake.edu.cn",
+                },
+              ],
+          },
+          {
+            name: "Jiaxin Li",
+            pic: "jiaxinli.png",
+            hasMemoji: true,
+            searchInterests: [],
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/Jiaxinlia" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:lijiaxin@westlake.edu.cn",
+                },
+              ],
+          },
+          {
+            name: "Ruiqi Feng",
+            pic: "ruiqifeng.png",
+            hasMemoji: true,
+            personal_page: "https://weenming.github.io",
+            searchInterests: ["AI for PDE control"],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://weenming.github.io",
+                },
+              ],
+          },
+          {
+            name: "Chenglei Yu",
+            pic: "chengleiyu.png",
+            hasMemoji: true,
+            searchInterests:
+              ["Protein Design", "Neural Network", "Physical System"],
+            socialLinks:
+              [{ icon: "fab fa-github", link: "https://github.com/oYCLo" }],
+          },
+          {
+            name: "Yuchen Yang",
+            pic: "yuchenyang.png",
+            hasMemoji: false,
+            searchInterests: ["(2025 fall)", "Machine Learning"],
+            socialLinks: [],
+          },
+          {
+            name: "Minsi Ren",
+            pic: "minsiren.png",
+            hasMemoji: false,
+            searchInterests:
+              ["(2025 fall)", "Generative model", "AI for science"],
+            socialLinks: [],
+          },
+          {
+            name: "Tengfei Xu",
+            pic: "tengfeixu.png",
+            hasMemoji: false,
+            searchInterests:
+              [
+                "(2025 fall)",
+                "Numerical Simulation",
+                "Brain-Inspired Computing"
+              ],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://bravedrxutf.github.io",
+                },
+              ],
+          },
+          {
+            name: "Jiashu Pan",
+            pic: "jiashupan.png",
+            hasMemoji: false,
+            searchInterests: ["(2025 fall)", "GenAI for Science"],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://panjiashu.github.io/",
+                },
+
+                { icon: "fab fa-github", link: "https://github.com/panjiashu" },
+                { icon: "fab fa-twitter", link: "https://x.com/pan_jiashu" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:panjiashu@westlake.edu.cn",
+                },
+              ],
+          },
+          
+        ],
+    }
+  - {
+      icon: "assignment_ind",
+      category: "Research Assistant",
+      label: "research-assistant",
+      members:
+        [
+          {
+            name: "Wenhao Deng",        
+            pic: "wenhaodeng.png",
+            hasMemoji: true,
+            personal_page: "https://w3nhao.github.io/",
+            searchInterests:
+              ["Language Model", "Information Retrieval", "Agents"],
+            socialLinks:
+              [
+                { icon: "fa-solid fa-user", link: "https://w3nhao.github.io/" },
+                { icon: "fab fa-github", link: "https://github.com/w3nhao" },
+                { icon: "fab fa-twitter", link: "https://twitter.com/dw3nhao" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:wenhao.deng@foxmail.com",
+                },
+              ],
+          },
+          {
+            name: "Tian Xia",
+            pic: "tianxia.png",
+            hasMemoji: true,
+            searchInterests: ["AI for Materials Science", "AI Agent"],
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/Lunar13737",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/summer_ti37",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:xiatian20@westlake.edu.cn",
+                },
+              ],
+          },
+          {
+            name: "Yi Dai",
+            pic: "yidai.png",
+            hasMemoji: true,
+            searchInterests: ["Everything", "Everywhere", "All at Once"],
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/PascalDai" },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/PascalDai",
+                },
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "flight_land",
+      category: "Visiting Students",
+      label: "visiting-students",
+      members:
+        [
+          {
+            name: "Peiyan Hu",
+            pic: "peiyanhu.png",
+            hasMemoji: true,
+            searchInterests: ["AI for PDEs", "AI for Physics"],
+            personal_page: "https://peiyannn.github.io/",
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://peiyannn.github.io/",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "hupeiyan18@mails.ucas.ac.cn",
+                },
+              ],
+          },
+
+          {
+            name: "Jiyuan Li",
+            pic: "jiyuanli.png",
+            hasMemoji: false,
+            searchInterests: [],
+            socialLinks:
+              [{ icon: "far fa-envelope", link: "mailto:lijiyuan@swip.ac.cn" }],
+          },
+          {
+            name: "Haodong Feng",
+            pic: "haodongfeng.png",
+            hasMemoji: true,
+            searchInterests:
+              ["AI for PDE", "Reinforcement learning", "Flow control"],
+            socialLinks:
+              [
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:fenghaodong@westlake.edu.cn",
+                },
+              ],
+          },
+          {
+            name: "Tao Zhang",
+            pic: "taozhang2.png",
+            hasMemoji: true,
+            searchInterests: ["Multiphysics fields simulation"],
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/taozhan18" },
+                { icon: "far fa-envelope", link: "mailto:853142213@qq.com" },
+              ],
+          },
+
+          {
+            name: "Xiaowei Qian",
+            pic: "xiaoweiqian.png",
+            hasMemoji: true,
+            searchInterests:
+              ["AI for Science", " Graph Representation Learning"],
+            socialLinks:
+              [
+                { icon: "fa-solid fa-user", link: "https://XweiQ.github.io" },
+                { icon: "fab fa-github", link: "https://github.com/XweiQ" },
+                { icon: "fab fa-twitter", link: "https://x.com/Xiaowei_Qian_" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:xiaoweiqian0311@gmail.com",
+                },
+              ],
+          },
+          {
+            name: "Tianci Bu",
+            pic: "tiancibu.png",
+            hasMemoji: true,
+            searchInterests: ["Graph Generation", "Continual Learning"],
+            socialLinks:
+              [{ icon: "fab fa-github", link: "https://github.com/b010001y" }],
+          },
+          {
+            name: "Chenbo Jiang",
+            pic: "chenbojiang.png",
+            hasMemoji: false,
+            searchInterests:
+              [
+                "Computer Graphics",
+                "Geometric Learning",
+                "Differentiable Simulation",
+              ],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "http://jiang25262.github.io",
+                },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:chenbo.jiang@mail.mcgill.ca",
+                },
+              ],
+          },
+          {
+            name: "Chuanrui Wang",
+            pic: "chuanruiwang.png",
+            hasMemoji: true,
+            searchInterests:
+              ["Generative Model", "Protein Design", "Manifold Learning"],
+            socialLinks:
+              [
+                { icon: "fa-solid fa-user", link: "https://wang-cr.github.io" },
+                { icon: "fab fa-twitter", link: "https://x.com/Grosgrey" },
+              ],
+          },
+          {
+            name: "Hao Ma",
+            pic: "haoma.png",
+            hasMemoji: true,
+            searchInterests: ["AI4Science","Science4AI","Fundamental Physics"],
+            socialLinks: 
+            [
+              { icon: "fab fa-twitter", link: "https://x.com/MaHao0416" },
+              { icon: "far fa-envelope", link: "mailto:mahao21@mails.ucas.ac.cn" },
+            ],
+          }
+        ],
+    }
+  - {
+      icon: "group",
+      category: "Undergraduate",
+      label: "undergraduate",
+      members:
+        [
+          { name: "Zebang Wu", pic: "zebangwu.png", hasMemoji: true },
+          { name: "Yixian Jiang", pic: "yixianjiang.png", hasMemoji: true },
+        ],
+    }
+  - {
+      icon: "face",
+      category: "Collaborator",
+      label: "collaborator",
+      members:
+        [
+          {
+            name: "Haixin Wang, Peking University",
+            pic: "haixinwang.png",
+            hasMemoji: true,
+            searchInterests: ["Deep Learning", "AI for Science"],
+          },
+          {
+            name: "Qianru Zhang, HKU",
+            pic: "qianruzhang.png",
+            hasMemoji: true,
+            personal_page: "https://lizzyhku.github.io",
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://lizzyhku.github.io",
+                },
+              ],
+          },
+        ],
+    }
+  - {
+      icon: "flight_takeoff",
+      category: "Alumnus",
+      label: "alumnus",
+      members:
+        [
+          {
+            name: "Rundong He, SDU",
+            pic: "rundonghe.png",
+            hasMemoji: false,
+            personal_page: "https://rundonghe.github.io",
+            searchInterests:
+              [
+                "Uncertainty Estimation",
+                "Out-of-Distribution Detection",
+                "Robust Weakly-supervised Learning",
+              ],
+            socialLinks:
+              [
+                {
+                  icon: "fa-solid fa-user",
+                  link: "https://rundonghe.github.io",
+                },
+              ],
+          },
+          {
+            name: "Zhuohao Ni",
+            pic: "zhuohaoni.png",
+            hasMemoji: false,
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/ZhuohaoNi" },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/ppppnnnni",
+                },
+              ],
+          },
+          {
+            name: "Siyuan Li",
+            pic: "siyuanli.png",
+            hasMemoji: true,
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/liaoyanqing666",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/liaoyanqing6666",
+                },
+              ],
+          },
+          {
+            name: "Yixuan Du",
+            pic: "yixuandu.png",
+            hasMemoji: true,
+            searchInterests: ["Graph machine learning", "AI4SCI"],
+            socialLinks:
+              [
+                { icon: "fab fa-github", link: "https://github.com/Duyx5149" },
+                {
+                  icon: "far fa-envelope",
+                  link: "mailto:yixuantu42@gmail.com",
+                },
+              ],
+          },
+          {
+            name: "Rui Wang",
+            pic: "ruiwang.png",
+            hasMemoji: true,
+            searchInterests: ["AI for science", "AI for communication"],
+            socialLinks: [],
+          },
+          {
+            name: "Xiang Zheng",
+            pic: "xiangzheng.png",
+            hasMemoji: true,
+            searchInterests: ["Physics Simulation & Prediction"],
+            socialLinks:
+              [
+                {
+                  icon: "fab fa-github",
+                  link: "https://github.com/Ashleyhoho",
+                },
+                {
+                  icon: "fab fa-twitter",
+                  link: "https://twitter.com/hahaheihei79447",
+                },
+                { icon: "far fa-envelope", link: "mailto:1793434271@qq.com" },
+              ],
+          },
+          {
+            name: "Shiwen Wang",
+            pic: "shiwenwang.png",
+            hasMemoji: true,
+            searchInterests: ["Diffusion Model", "Bridge Matching"],
+          },
+        ],
+      stanfordStudents:
+        [
+          {
+            name: "Megan Tjandrasuwita",
+            url: "https://megantj.com/",
+            exp: "summer intern, 2021 → Ph.D. student at",
+            schoolname: "MIT EECS",
+            schoolurl: "https://www.eecs.mit.edu/",
+          },
+          {
+            name: "Zhengxuan Wu",
+            url: "https://zen-wu.social/",
+            exp: "research assistant, 2020-2021 → Ph.D. student at",
+            schoolname: "Stanford Computer Science",
+            schoolurl: "https://cs.stanford.edu/",
+          },
+          {
+            name: "Xuelin Yang",
+            url: "https://xyang23.github.io/",
+            exp: "research assistant, 2020-2021 → Ph.D. student at",
+            schoolname: "UC Berkeley Statistics",
+            schoolurl: "https://statistics.berkeley.edu/",
+          },
+          {
+            name: "Qingqing Zhao",
+            url: "https://cyanzhao42.github.io/",
+            exp: "2022, Ph.D. student collaborator @",
+            schoolname: "Stanford Electrical Engineering",
+            schoolurl: "https://ee.stanford.edu/",
+          },
+          {
+            name: "Pranay Reddy Samala",
+            url: "https://www.linkedin.com/in/pranayr/",
+            exp: "research assistant, 2021-2022 Spring → Software Engineer @",
+            schoolname: "Waymo",
+            schoolurl: "https://waymo.com/",
+          },
+          {
+            name: "Takashi Maruyama",
+            url: "https://sites.google.com/view/tmaruyama/home",
+            exp: "2022-2023, visiting scholar @",
+            schoolname: "NEC Laboratories Europe",
+            schoolurl: "https://www.neclab.eu/",
+          },
+        ],
+    }
+
+menuItems:
+  blogs: "Blogs"
+  talks: "Talks"
+  people: "People"
+  publications: "Publications"
+  news: "News"
+  opening: "Opening"
+  join_us: "Join Us"
+  about_our_team: "About Our Team"
+  invited_talks: "Invited Talk"
+  latest_talks: "Latest talks"
+  featured_talks: "Featured talks"
+  other_talks: "Other talks"
+  course: "Course"
+  gallary: "Gallary"
+
+our_team_subtitle: "The Journey is the Reward"
+
+mainpageContent:
+  title: "Our lab mission is to"
+  subtitles: ["solve important AI + Science problems", "open new frontiers"]
+  quote: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color."
